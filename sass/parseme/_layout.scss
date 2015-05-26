@@ -31,7 +31,7 @@
 }
 
 .menu ul {
-    margin : 40px 0;
+    margin : 50px 0;
 }
 /*
  * SLIDER DEFINITIONS
@@ -65,14 +65,45 @@
   }
   
   .grid-10 {
-    border: 1px solid #aaa;
+    border: 1px solid #999;
     margin: 10px 0 ;
+  }
+  
+   h1::before {
+       content: "\f101";
+       font-family: "FontAwesome";
+  
   }
 }
 
 .main .container {
  padding: $container_padding;
 }
+
+.main {
+  background: #eee;
+}
+
+
+/*
+ * PARTNER DEFINITIONS
+ */
+.partner {
+  p {
+    text-align: justify;
+  }
+  
+  h1::before {
+       content: "\f101";
+       font-family: "FontAwesome";
+  
+  }
+}
+
+.partner .container {
+ padding: $container_padding;
+}
+
 
 /*
  * BOTTOM DEFINITIONS

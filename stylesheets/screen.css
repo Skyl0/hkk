@@ -274,6 +274,12 @@ h2 {
   margin: 0 0 10px 0;
 }
 
+/* line 39, ../sass/parseme/_fonts.scss */
+h3 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
 /* line 1, ../sass/parseme/_layout.scss */
 .container {
   margin: 0 auto;
@@ -314,7 +320,7 @@ h2 {
 
 /* line 33, ../sass/parseme/_layout.scss */
 .menu ul {
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 /*
@@ -349,41 +355,69 @@ h2 {
 }
 /* line 67, ../sass/parseme/_layout.scss */
 .main .grid-10 {
-  border: 1px solid #aaa;
+  border: 1px solid #999;
   margin: 10px 0;
 }
+/* line 72, ../sass/parseme/_layout.scss */
+.main h1::before {
+  content: "\f101";
+  font-family: "FontAwesome";
+}
 
-/* line 73, ../sass/parseme/_layout.scss */
+/* line 79, ../sass/parseme/_layout.scss */
 .main .container {
+  padding: 40px 0;
+}
+
+/* line 83, ../sass/parseme/_layout.scss */
+.main {
+  background: #eee;
+}
+
+/*
+ * PARTNER DEFINITIONS
+ */
+/* line 92, ../sass/parseme/_layout.scss */
+.partner p {
+  text-align: justify;
+}
+/* line 96, ../sass/parseme/_layout.scss */
+.partner h1::before {
+  content: "\f101";
+  font-family: "FontAwesome";
+}
+
+/* line 103, ../sass/parseme/_layout.scss */
+.partner .container {
   padding: 40px 0;
 }
 
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 80, ../sass/parseme/_layout.scss */
+/* line 111, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 87, ../sass/parseme/_layout.scss */
+/* line 118, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
 
-/* line 91, ../sass/parseme/_layout.scss */
+/* line 122, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
 
-/* line 95, ../sass/parseme/_layout.scss */
+/* line 126, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 99, ../sass/parseme/_layout.scss */
+/* line 130, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
   height: 300px;
 }
@@ -391,7 +425,7 @@ h2 {
 /*
  * FOOTER DEFINITIONS
  */
-/* line 105, ../sass/parseme/_layout.scss */
+/* line 136, ../sass/parseme/_layout.scss */
 .footer {
   height: 70px;
   line-height: 70px;
@@ -400,29 +434,37 @@ h2 {
   color: white;
 }
 
-/* line 114, ../sass/parseme/_layout.scss */
+/* line 145, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
 }
-/* line 118, ../sass/parseme/_layout.scss */
+/* line 149, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
 
-/* line 1, ../sass/parseme/_menus.scss */
+/*
+ * MENU DEFINITIONS
+ */
+/* line 5, ../sass/parseme/_menus.scss */
 .menu ul {
   list-style-type: none;
 }
-/* line 4, ../sass/parseme/_menus.scss */
+
+/* line 10, ../sass/parseme/_menus.scss */
 .menu ul li {
   display: inline-block;
-  padding: 10px;
-  font-style: bold;
-  margin-left: 5px;
 }
-/* line 11, ../sass/parseme/_menus.scss */
-.menu ul li:hover {
+/* line 12, ../sass/parseme/_menus.scss */
+.menu ul li a {
+  padding: 10px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+/* line 21, ../sass/parseme/_menus.scss */
+.menu ul a:hover {
   background: #208ccc;
   color: white;
 }
@@ -432,12 +474,61 @@ h2 {
   text-align: right;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 3, ../sass/parseme/_customisenews.scss */
+.news .bodytext {
+  margin: 10px 0;
+}
+/* line 7, ../sass/parseme/_customisenews.scss */
+.news a {
+  text-decoration: none;
+  color: black;
+}
+/* line 12, ../sass/parseme/_customisenews.scss */
+.news .more::before {
+  content: "\f101";
+  font-family: "FontAwesome";
+}
+/* line 17, ../sass/parseme/_customisenews.scss */
+.news .news-img-wrap {
+  display: none !important;
+}
+/* line 21, ../sass/parseme/_customisenews.scss */
+.news .footer {
+  display: none;
+}
+/* line 25, ../sass/parseme/_customisenews.scss */
+.news .header h3 {
+  margin-top: 10px !important;
+  font-weight: bold;
+}
+/* line 30, ../sass/parseme/_customisenews.scss */
+.news .date_box {
+  position: relative;
+  display: block;
+  float: left;
+  background: #208ccc;
+  min-height: 150px;
+  color: white;
+  font-size: 24px;
+  vertical-align: bottom;
+  margin-right: 10px;
+  width: 150px;
+}
+/* line 45, ../sass/parseme/_customisenews.scss */
+.news .date_box #date {
+  position: absolute;
+  font-weight: bold;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+}
+
+/* line 20, ../sass/screen.scss */
 html {
   font-family: "OpenSans", Arial, sans-serif;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 p {
   line-height: 1.4em;
 }
