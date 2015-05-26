@@ -1,0 +1,15 @@
+.menu ul {
+	list-style-type: none;
+	
+	li {
+		display: inline-block;
+		padding: 10px;
+		font-style: bold;
+		margin-left: 5px;
+	}
+	
+	li:hover {
+	  background: $menu_highlight;
+	  color: white;
+	}
+}

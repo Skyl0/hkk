@@ -1,0 +1,64 @@
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+.top {
+  background: $color_top_bar;
+  line-height: 40px;
+  height: 40px;
+  color: white;
+  font-size: $normal;
+}
+
+.menu {
+  line-height: 20px;
+  height: 120px;
+  background: white;
+}
+
+.menu img {
+    margin: 20px 0;
+}
+
+.menu ul {
+    margin : 40px 0;
+}
+
+.slider {
+  height: 350px;
+  
+  background: url('../images/slider03.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.main {
+  
+}
+
+.main .container {
+  padding: 20px 0;
+}
+
+.bottom {
+  background: $color_top_bar;
+  height: 400px;
+  color: white;
+}
+
+.bottom .container {
+  padding: 20px 0;
+}
+
+.bottom .logo_bottom img {
+  height: 300px;
+}
+
+.footer {
+  height: 70px;
+  line-height: 70px;
+  background: $color_footer;  
+  font-size: $small;
+  color: white;
+}
