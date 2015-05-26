@@ -2,7 +2,9 @@
   margin: 0 auto;
   width: 960px;
 }
-
+/*
+ * TOP DEFINITIONS
+ */
 
 .top {
   background: $color_top_bar;
@@ -11,7 +13,13 @@
   color: white;
   font-size: $normal;
 }
+.top span {
+  margin: 0 0 0 10px;   
+}
 
+/*
+ * MENU DEFINITIONS
+ */
 .menu {
   line-height: 20px;
   height: 120px;
@@ -25,40 +33,89 @@
 .menu ul {
     margin : 40px 0;
 }
-
+/*
+ * SLIDER DEFINITIONS
+ */
 .slider {
   height: 350px;
   
   background: url('../images/slider03.jpg') center center no-repeat;
   background-size: cover;
 }
+/*
+ * SHORTCODES DEFINITIONS
+ */
 
+.shortcodes {
+  .grid-4 {
+    background: $color_shortcodes;
+    color: white;
+  }
+  .container {
+    padding: $container_padding;
+  }
+}
+
+/*
+ * MAIN DEFINITIONS
+ */
 .main {
+  p {
+    text-align: justify;
+  }
   
+  .grid-10 {
+    border: 1px solid #aaa;
+    margin: 10px 0 ;
+  }
 }
 
 .main .container {
-  padding: 20px 0;
+ padding: $container_padding;
 }
 
+/*
+ * BOTTOM DEFINITIONS
+ */
 .bottom {
   background: $color_top_bar;
-  height: 400px;
+ // height: 400px;
   color: white;
+  font-size: $bottom;
 }
 
 .bottom .container {
-  padding: 20px 0;
+  padding: $container_padding;
+}
+
+.bottom p {
+  margin: 0 0 10px 0 ;
+}
+
+.contact_bottom .fa {
+  width: 25px;
 }
 
 .bottom .logo_bottom img {
   height: 300px;
 }
-
+/*
+ * FOOTER DEFINITIONS
+ */
 .footer {
   height: 70px;
   line-height: 70px;
   background: $color_footer;  
   font-size: $small;
   color: white;
+}
+
+.footer {
+  a {
+  color: white;
+  text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }

@@ -38,6 +38,9 @@ $settings : (
 @include gridle_register_clear_each(2, left);
 @include gridle_register_clear_each(12, both);
 
+@include gridle_register_column( '5on24' , 5, 24 );
+@include gridle_register_column( '7on24' , 7, 24 );
+
 // register states :
 //@include gridle_register_default_states();
 @include gridle_register_state(ipad-landscape, (

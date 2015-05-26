@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 56, ../sass/gridle/_silent-classes.scss */
-.push-0, .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-mobile-0, .push-mobile-1, .push-mobile-2, .push-mobile-3, .push-mobile-4, .push-mobile-5, .push-mobile-6, .push-mobile-7, .push-mobile-8, .push-mobile-9, .push-mobile-10, .push-mobile-11, .push-mobile-12, .push-ipad-landscape-0, .push-ipad-landscape-1, .push-ipad-landscape-2, .push-ipad-landscape-3, .push-ipad-landscape-4, .push-ipad-landscape-5, .push-ipad-landscape-6, .push-ipad-landscape-7, .push-ipad-landscape-8, .push-ipad-landscape-9, .push-ipad-landscape-10, .push-ipad-landscape-11, .push-ipad-landscape-12, .pull-0, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-mobile-0, .pull-mobile-1, .pull-mobile-2, .pull-mobile-3, .pull-mobile-4, .pull-mobile-5, .pull-mobile-6, .pull-mobile-7, .pull-mobile-8, .pull-mobile-9, .pull-mobile-10, .pull-mobile-11, .pull-mobile-12, .pull-ipad-landscape-0, .pull-ipad-landscape-1, .pull-ipad-landscape-2, .pull-ipad-landscape-3, .pull-ipad-landscape-4, .pull-ipad-landscape-5, .pull-ipad-landscape-6, .pull-ipad-landscape-7, .pull-ipad-landscape-8, .pull-ipad-landscape-9, .pull-ipad-landscape-10, .pull-ipad-landscape-11, .pull-ipad-landscape-12 {
+.push-5on24, .push-7on24, .push-0, .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-mobile-5on24, .push-mobile-7on24, .push-mobile-0, .push-mobile-1, .push-mobile-2, .push-mobile-3, .push-mobile-4, .push-mobile-5, .push-mobile-6, .push-mobile-7, .push-mobile-8, .push-mobile-9, .push-mobile-10, .push-mobile-11, .push-mobile-12, .push-ipad-landscape-5on24, .push-ipad-landscape-7on24, .push-ipad-landscape-0, .push-ipad-landscape-1, .push-ipad-landscape-2, .push-ipad-landscape-3, .push-ipad-landscape-4, .push-ipad-landscape-5, .push-ipad-landscape-6, .push-ipad-landscape-7, .push-ipad-landscape-8, .push-ipad-landscape-9, .push-ipad-landscape-10, .push-ipad-landscape-11, .push-ipad-landscape-12, .pull-5on24, .pull-7on24, .pull-0, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-mobile-5on24, .pull-mobile-7on24, .pull-mobile-0, .pull-mobile-1, .pull-mobile-2, .pull-mobile-3, .pull-mobile-4, .pull-mobile-5, .pull-mobile-6, .pull-mobile-7, .pull-mobile-8, .pull-mobile-9, .pull-mobile-10, .pull-mobile-11, .pull-mobile-12, .pull-ipad-landscape-5on24, .pull-ipad-landscape-7on24, .pull-ipad-landscape-0, .pull-ipad-landscape-1, .pull-ipad-landscape-2, .pull-ipad-landscape-3, .pull-ipad-landscape-4, .pull-ipad-landscape-5, .pull-ipad-landscape-6, .pull-ipad-landscape-7, .pull-ipad-landscape-8, .pull-ipad-landscape-9, .pull-ipad-landscape-10, .pull-ipad-landscape-11, .pull-ipad-landscape-12 {
   position: relative;
 }
 
@@ -108,7 +108,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 90, ../sass/gridle/_silent-classes.scss */
-.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
+.grid-5on24, .grid-7on24, .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-5on24, .grid-mobile-7on24, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-5on24, .grid-ipad-landscape-7on24, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
   display: inline-block;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -265,13 +265,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 29, ../sass/parseme/_fonts.scss */
 h1 {
   font-size: 24px;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
 }
 
 /* line 34, ../sass/parseme/_fonts.scss */
 h2 {
   font-size: 20px;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
 }
 
 /* line 1, ../sass/parseme/_layout.scss */
@@ -280,7 +280,10 @@ h2 {
   width: 960px;
 }
 
-/* line 7, ../sass/parseme/_layout.scss */
+/*
+ * TOP DEFINITIONS
+ */
+/* line 9, ../sass/parseme/_layout.scss */
 .top {
   background: #208ccc;
   line-height: 40px;
@@ -289,59 +292,122 @@ h2 {
   font-size: 14px;
 }
 
-/* line 15, ../sass/parseme/_layout.scss */
+/* line 16, ../sass/parseme/_layout.scss */
+.top span {
+  margin: 0 0 0 10px;
+}
+
+/*
+ * MENU DEFINITIONS
+ */
+/* line 23, ../sass/parseme/_layout.scss */
 .menu {
   line-height: 20px;
   height: 120px;
   background: white;
 }
 
-/* line 21, ../sass/parseme/_layout.scss */
+/* line 29, ../sass/parseme/_layout.scss */
 .menu img {
   margin: 20px 0;
 }
 
-/* line 25, ../sass/parseme/_layout.scss */
+/* line 33, ../sass/parseme/_layout.scss */
 .menu ul {
   margin: 40px 0;
 }
 
-/* line 29, ../sass/parseme/_layout.scss */
+/*
+ * SLIDER DEFINITIONS
+ */
+/* line 39, ../sass/parseme/_layout.scss */
 .slider {
   height: 350px;
   background: url("../images/slider03.jpg") center center no-repeat;
   background-size: cover;
 }
 
-/* line 40, ../sass/parseme/_layout.scss */
-.main .container {
-  padding: 20px 0;
-}
-
-/* line 44, ../sass/parseme/_layout.scss */
-.bottom {
+/*
+ * SHORTCODES DEFINITIONS
+ */
+/* line 50, ../sass/parseme/_layout.scss */
+.shortcodes .grid-4 {
   background: #208ccc;
-  height: 400px;
   color: white;
 }
-
-/* line 50, ../sass/parseme/_layout.scss */
-.bottom .container {
-  padding: 20px 0;
+/* line 54, ../sass/parseme/_layout.scss */
+.shortcodes .container {
+  padding: 40px 0;
 }
 
-/* line 54, ../sass/parseme/_layout.scss */
+/*
+ * MAIN DEFINITIONS
+ */
+/* line 63, ../sass/parseme/_layout.scss */
+.main p {
+  text-align: justify;
+}
+/* line 67, ../sass/parseme/_layout.scss */
+.main .grid-10 {
+  border: 1px solid #aaa;
+  margin: 10px 0;
+}
+
+/* line 73, ../sass/parseme/_layout.scss */
+.main .container {
+  padding: 40px 0;
+}
+
+/*
+ * BOTTOM DEFINITIONS
+ */
+/* line 80, ../sass/parseme/_layout.scss */
+.bottom {
+  background: #208ccc;
+  color: white;
+  font-size: 15px;
+}
+
+/* line 87, ../sass/parseme/_layout.scss */
+.bottom .container {
+  padding: 40px 0;
+}
+
+/* line 91, ../sass/parseme/_layout.scss */
+.bottom p {
+  margin: 0 0 10px 0;
+}
+
+/* line 95, ../sass/parseme/_layout.scss */
+.contact_bottom .fa {
+  width: 25px;
+}
+
+/* line 99, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
   height: 300px;
 }
 
-/* line 58, ../sass/parseme/_layout.scss */
+/*
+ * FOOTER DEFINITIONS
+ */
+/* line 105, ../sass/parseme/_layout.scss */
 .footer {
   height: 70px;
   line-height: 70px;
   background: #333333;
   font-size: 13px;
   color: white;
+}
+
+/* line 114, ../sass/parseme/_layout.scss */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 118, ../sass/parseme/_layout.scss */
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* line 1, ../sass/parseme/_menus.scss */
@@ -387,7 +453,7 @@ p {
 }
 
 /* line 502, ../sass/gridle/_generate-mixins.scss */
-.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
+.grid-5on24, .grid-7on24, .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-5on24, .grid-mobile-7on24, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-5on24, .grid-ipad-landscape-7on24, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
   float: left;
   direction: ltr;
   padding-left: 10px;
@@ -395,17 +461,67 @@ p {
 }
 @media screen and (max-width: 480px) {
   /* line 502, ../sass/gridle/_generate-mixins.scss */
-  .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
+  .grid-5on24, .grid-7on24, .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-5on24, .grid-mobile-7on24, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-5on24, .grid-ipad-landscape-7on24, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
     padding-left: 5px;
     padding-right: 5px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* line 502, ../sass/gridle/_generate-mixins.scss */
-  .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
+  .grid-5on24, .grid-7on24, .grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-mobile-5on24, .grid-mobile-7on24, .grid-mobile-0, .grid-mobile-1, .grid-mobile-2, .grid-mobile-3, .grid-mobile-4, .grid-mobile-5, .grid-mobile-6, .grid-mobile-7, .grid-mobile-8, .grid-mobile-9, .grid-mobile-10, .grid-mobile-11, .grid-mobile-12, .grid-ipad-landscape-5on24, .grid-ipad-landscape-7on24, .grid-ipad-landscape-0, .grid-ipad-landscape-1, .grid-ipad-landscape-2, .grid-ipad-landscape-3, .grid-ipad-landscape-4, .grid-ipad-landscape-5, .grid-ipad-landscape-6, .grid-ipad-landscape-7, .grid-ipad-landscape-8, .grid-ipad-landscape-9, .grid-ipad-landscape-10, .grid-ipad-landscape-11, .grid-ipad-landscape-12 {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+/* line 591, ../sass/gridle/_generate-mixins.scss */
+.grid-5on24 {
+  width: 20.83333%;
+}
+
+/* line 596, ../sass/gridle/_generate-mixins.scss */
+.push-5on24 {
+  left: 20.83333%;
+}
+
+/* line 601, ../sass/gridle/_generate-mixins.scss */
+.pull-5on24 {
+  right: 20.83333%;
+}
+
+/* line 606, ../sass/gridle/_generate-mixins.scss */
+.prefix-5on24 {
+  margin-left: 20.83333%;
+}
+
+/* line 611, ../sass/gridle/_generate-mixins.scss */
+.suffix-5on24 {
+  margin-right: 20.83333%;
+}
+
+/* line 591, ../sass/gridle/_generate-mixins.scss */
+.grid-7on24 {
+  width: 29.16667%;
+}
+
+/* line 596, ../sass/gridle/_generate-mixins.scss */
+.push-7on24 {
+  left: 29.16667%;
+}
+
+/* line 601, ../sass/gridle/_generate-mixins.scss */
+.pull-7on24 {
+  right: 29.16667%;
+}
+
+/* line 606, ../sass/gridle/_generate-mixins.scss */
+.prefix-7on24 {
+  margin-left: 29.16667%;
+}
+
+/* line 611, ../sass/gridle/_generate-mixins.scss */
+.suffix-7on24 {
+  margin-right: 29.16667%;
 }
 
 /* line 591, ../sass/gridle/_generate-mixins.scss */
@@ -922,6 +1038,56 @@ p {
 
 @media screen and (max-width: 480px) {
   /* line 591, ../sass/gridle/_generate-mixins.scss */
+  .grid-mobile-5on24 {
+    width: 20.83333%;
+  }
+
+  /* line 596, ../sass/gridle/_generate-mixins.scss */
+  .push-mobile-5on24 {
+    left: 20.83333%;
+  }
+
+  /* line 601, ../sass/gridle/_generate-mixins.scss */
+  .pull-mobile-5on24 {
+    right: 20.83333%;
+  }
+
+  /* line 606, ../sass/gridle/_generate-mixins.scss */
+  .prefix-mobile-5on24 {
+    margin-left: 20.83333%;
+  }
+
+  /* line 611, ../sass/gridle/_generate-mixins.scss */
+  .suffix-mobile-5on24 {
+    margin-right: 20.83333%;
+  }
+
+  /* line 591, ../sass/gridle/_generate-mixins.scss */
+  .grid-mobile-7on24 {
+    width: 29.16667%;
+  }
+
+  /* line 596, ../sass/gridle/_generate-mixins.scss */
+  .push-mobile-7on24 {
+    left: 29.16667%;
+  }
+
+  /* line 601, ../sass/gridle/_generate-mixins.scss */
+  .pull-mobile-7on24 {
+    right: 29.16667%;
+  }
+
+  /* line 606, ../sass/gridle/_generate-mixins.scss */
+  .prefix-mobile-7on24 {
+    margin-left: 29.16667%;
+  }
+
+  /* line 611, ../sass/gridle/_generate-mixins.scss */
+  .suffix-mobile-7on24 {
+    margin-right: 29.16667%;
+  }
+
+  /* line 591, ../sass/gridle/_generate-mixins.scss */
   .grid-mobile-0 {
     width: 0%;
   }
@@ -1434,6 +1600,56 @@ p {
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* line 591, ../sass/gridle/_generate-mixins.scss */
+  .grid-ipad-landscape-5on24 {
+    width: 20.83333%;
+  }
+
+  /* line 596, ../sass/gridle/_generate-mixins.scss */
+  .push-ipad-landscape-5on24 {
+    left: 20.83333%;
+  }
+
+  /* line 601, ../sass/gridle/_generate-mixins.scss */
+  .pull-ipad-landscape-5on24 {
+    right: 20.83333%;
+  }
+
+  /* line 606, ../sass/gridle/_generate-mixins.scss */
+  .prefix-ipad-landscape-5on24 {
+    margin-left: 20.83333%;
+  }
+
+  /* line 611, ../sass/gridle/_generate-mixins.scss */
+  .suffix-ipad-landscape-5on24 {
+    margin-right: 20.83333%;
+  }
+
+  /* line 591, ../sass/gridle/_generate-mixins.scss */
+  .grid-ipad-landscape-7on24 {
+    width: 29.16667%;
+  }
+
+  /* line 596, ../sass/gridle/_generate-mixins.scss */
+  .push-ipad-landscape-7on24 {
+    left: 29.16667%;
+  }
+
+  /* line 601, ../sass/gridle/_generate-mixins.scss */
+  .pull-ipad-landscape-7on24 {
+    right: 29.16667%;
+  }
+
+  /* line 606, ../sass/gridle/_generate-mixins.scss */
+  .prefix-ipad-landscape-7on24 {
+    margin-left: 29.16667%;
+  }
+
+  /* line 611, ../sass/gridle/_generate-mixins.scss */
+  .suffix-ipad-landscape-7on24 {
+    margin-right: 29.16667%;
+  }
+
   /* line 591, ../sass/gridle/_generate-mixins.scss */
   .grid-ipad-landscape-0 {
     width: 0%;
