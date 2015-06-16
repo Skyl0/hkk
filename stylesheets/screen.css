@@ -593,12 +593,37 @@ h3 {
   margin-left: 150px;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 1, ../sass/parseme/_scrollup.scss */
+.scrollup {
+  margin: -2em auto 0 auto;
+  position: relative;
+  text-align: center;
+  top: 70px;
+}
+
+/* line 10, ../sass/parseme/_scrollup.scss */
+.scrollup a {
+  position: relative;
+  margin: 0 auto;
+  height: 59px;
+  width: 59px;
+  display: block;
+  background-image: url(../images/scrollup_ia.png);
+  transition: all 1s linear;
+}
+
+/* line 18, ../sass/parseme/_scrollup.scss */
+.scrollup a:hover {
+  top: -5px;
+  background-image: url(../images/scrollup_a.png);
+}
+
+/* line 21, ../sass/screen.scss */
 html {
   font-family: "OpenSans", Arial, sans-serif;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 p {
   line-height: 1.4em;
 }

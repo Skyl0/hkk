@@ -1,0 +1,21 @@
+.scrollup {
+  
+  margin: -2em auto 0 auto;
+  position: relative;
+  text-align: center;
+  top: 70px;
+  
+}
+
+.scrollup a {
+  position: relative;
+  margin: 0 auto;
+  height: 59px; width: 59px; display: block;
+  background-image: url(../images/scrollup_ia.png);
+  transition: all 1.0s linear; //TODO Tobi fragen 
+}
+
+.scrollup a:hover {
+  top: -5px;
+  background-image: url(../images/scrollup_a.png);
+}
