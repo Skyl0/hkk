@@ -25,6 +25,7 @@
   .header h3 {
     margin-top: 10px !important;
     font-weight: bold;
+    color: $color_top_bar !important;
   }
   
   .date_box {
@@ -42,6 +43,20 @@
     
   }
   
+  .date_box_odd {
+    position: relative;
+    display: block;
+    float: right;
+    background: $color_top_bar;
+    min-height: 150px;
+    color: white;
+    font-size: 24px;
+    
+    vertical-align: bottom;
+    margin-left: 10px;
+    width: 150px;
+      }
+  
   .date_box #date {
     position: absolute;
     font-weight: bold;
@@ -50,8 +65,21 @@
     padding: 5px;
     }
     
+  .date_box_odd #date {
+    position: absolute;
+    font-weight: bold;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px;
+    }
+    
     .news-odd {
       
+    margin-left: 150px;
       
     }
+    
+   
+
+    
 }

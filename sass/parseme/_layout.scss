@@ -48,14 +48,48 @@
 
 .shortcodes {
   .grid-4 {
-    background: $color_shortcodes;
+    
     color: white;
+   
   }
   .container {
     padding: $container_padding;
   }
+  
+
+}
+.sc {
+  background: $color_shortcodes;
 }
 
+.sc .csc-header {
+  padding:0 10px;  
+}
+
+.sc .bodytext {
+  padding: 0 10px 10px 10px; 
+}
+
+.sc {
+  display: block;
+  min-height: 375px;
+}
+
+.scleft {
+  position: relative;
+  left: -9px;
+
+}
+
+.scmiddle {
+  position: relative;
+  left: -4px;
+ // margin: 0 5px !important;
+}
+
+.scright {
+  
+}
 /*
  * MAIN DEFINITIONS
  */
@@ -129,6 +163,20 @@
 
 .bottom .logo_bottom img {
   height: 300px;
+}
+
+.bottom , .sc , .top {
+  
+  a{
+   color: white;
+  text-decoration: none; 
+  line-height: 1.5em;
+  }
+  
+  a:hover {
+    
+    text-decoration: underline;
+  }  
 }
 /*
  * FOOTER DEFINITIONS

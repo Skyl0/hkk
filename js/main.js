@@ -7,8 +7,10 @@
 jQuery(document).ready(function($)  {
 	
 	// News Ansicht
-	$('.news-list-view div:nth-child(even)').addClass('news-odd').addClass('grid-push-50');
-  
+	$('.news-list-view > div:nth-child(even)').addClass('news-odd').removeClass('no-gutter-left').addClass('no-gutter-right');
+	$('.news-list-view > div:nth-child(even) div.date_box').removeClass('date_box').addClass('date_box_odd');
+	
+	
   	// Vertical Tabs
      $( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
      $( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );

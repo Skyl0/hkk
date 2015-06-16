@@ -338,38 +338,70 @@ h3 {
  */
 /* line 50, ../sass/parseme/_layout.scss */
 .shortcodes .grid-4 {
-  background: #208ccc;
   color: white;
 }
-/* line 54, ../sass/parseme/_layout.scss */
+/* line 55, ../sass/parseme/_layout.scss */
 .shortcodes .container {
   padding: 40px 0;
+}
+
+/* line 61, ../sass/parseme/_layout.scss */
+.sc {
+  background: #208ccc;
+}
+
+/* line 65, ../sass/parseme/_layout.scss */
+.sc .csc-header {
+  padding: 0 10px;
+}
+
+/* line 69, ../sass/parseme/_layout.scss */
+.sc .bodytext {
+  padding: 0 10px 10px 10px;
+}
+
+/* line 73, ../sass/parseme/_layout.scss */
+.sc {
+  display: block;
+  min-height: 375px;
+}
+
+/* line 78, ../sass/parseme/_layout.scss */
+.scleft {
+  position: relative;
+  left: -9px;
+}
+
+/* line 84, ../sass/parseme/_layout.scss */
+.scmiddle {
+  position: relative;
+  left: -4px;
 }
 
 /*
  * MAIN DEFINITIONS
  */
-/* line 63, ../sass/parseme/_layout.scss */
+/* line 97, ../sass/parseme/_layout.scss */
 .main p {
   text-align: justify;
 }
-/* line 67, ../sass/parseme/_layout.scss */
+/* line 101, ../sass/parseme/_layout.scss */
 .main .grid-10 {
   border: 1px solid #999;
   margin: 10px 0;
 }
-/* line 72, ../sass/parseme/_layout.scss */
+/* line 106, ../sass/parseme/_layout.scss */
 .main h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 79, ../sass/parseme/_layout.scss */
+/* line 113, ../sass/parseme/_layout.scss */
 .main .container {
   padding: 40px 0;
 }
 
-/* line 83, ../sass/parseme/_layout.scss */
+/* line 117, ../sass/parseme/_layout.scss */
 .main {
   background: #eee;
 }
@@ -377,17 +409,17 @@ h3 {
 /*
  * PARTNER DEFINITIONS
  */
-/* line 92, ../sass/parseme/_layout.scss */
+/* line 126, ../sass/parseme/_layout.scss */
 .partner p {
   text-align: justify;
 }
-/* line 96, ../sass/parseme/_layout.scss */
+/* line 130, ../sass/parseme/_layout.scss */
 .partner h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 103, ../sass/parseme/_layout.scss */
+/* line 137, ../sass/parseme/_layout.scss */
 .partner .container {
   padding: 40px 0;
 }
@@ -395,37 +427,48 @@ h3 {
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 111, ../sass/parseme/_layout.scss */
+/* line 145, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 118, ../sass/parseme/_layout.scss */
+/* line 152, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
 
-/* line 122, ../sass/parseme/_layout.scss */
+/* line 156, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
 
-/* line 126, ../sass/parseme/_layout.scss */
+/* line 160, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 130, ../sass/parseme/_layout.scss */
+/* line 164, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
   height: 300px;
+}
+
+/* line 170, ../sass/parseme/_layout.scss */
+.bottom a, .sc a, .top a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+/* line 176, ../sass/parseme/_layout.scss */
+.bottom a:hover, .sc a:hover, .top a:hover {
+  text-decoration: underline;
 }
 
 /*
  * FOOTER DEFINITIONS
  */
-/* line 136, ../sass/parseme/_layout.scss */
+/* line 184, ../sass/parseme/_layout.scss */
 .footer {
   height: 70px;
   line-height: 70px;
@@ -434,12 +477,12 @@ h3 {
   color: white;
 }
 
-/* line 145, ../sass/parseme/_layout.scss */
+/* line 193, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
 }
-/* line 149, ../sass/parseme/_layout.scss */
+/* line 197, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
@@ -452,18 +495,19 @@ h3 {
   list-style-type: none;
 }
 
-/* line 10, ../sass/parseme/_menus.scss */
+/* line 11, ../sass/parseme/_menus.scss */
 .menu ul li {
   display: inline-block;
 }
-/* line 12, ../sass/parseme/_menus.scss */
+/* line 13, ../sass/parseme/_menus.scss */
 .menu ul li a {
   padding: 10px;
   margin-left: 5px;
   text-decoration: none;
   color: black;
+  transition: all 0.3s;
 }
-/* line 21, ../sass/parseme/_menus.scss */
+/* line 23, ../sass/parseme/_menus.scss */
 .menu ul a:hover {
   background: #208ccc;
   color: white;
@@ -500,8 +544,9 @@ h3 {
 .news .header h3 {
   margin-top: 10px !important;
   font-weight: bold;
+  color: #208ccc !important;
 }
-/* line 30, ../sass/parseme/_customisenews.scss */
+/* line 31, ../sass/parseme/_customisenews.scss */
 .news .date_box {
   position: relative;
   display: block;
@@ -514,13 +559,38 @@ h3 {
   margin-right: 10px;
   width: 150px;
 }
-/* line 45, ../sass/parseme/_customisenews.scss */
+/* line 46, ../sass/parseme/_customisenews.scss */
+.news .date_box_odd {
+  position: relative;
+  display: block;
+  float: right;
+  background: #208ccc;
+  min-height: 150px;
+  color: white;
+  font-size: 24px;
+  vertical-align: bottom;
+  margin-left: 10px;
+  width: 150px;
+}
+/* line 60, ../sass/parseme/_customisenews.scss */
 .news .date_box #date {
   position: absolute;
   font-weight: bold;
   bottom: 0px;
   right: 0px;
   padding: 5px;
+}
+/* line 68, ../sass/parseme/_customisenews.scss */
+.news .date_box_odd #date {
+  position: absolute;
+  font-weight: bold;
+  bottom: 0px;
+  left: 0px;
+  padding: 5px;
+}
+/* line 76, ../sass/parseme/_customisenews.scss */
+.news .news-odd {
+  margin-left: 150px;
 }
 
 /* line 20, ../sass/screen.scss */
