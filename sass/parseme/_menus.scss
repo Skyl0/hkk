@@ -4,6 +4,9 @@
 
 .menu ul {
 	list-style-type: none;
+	position: relative;
+	left: -52px;
+	z-index:500;
 }
 
 .menu ul {

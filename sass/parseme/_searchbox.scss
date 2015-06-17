@@ -1,0 +1,36 @@
+.indexedsearch {
+  position: relative;
+  top: -80px;
+  float: right;
+  height: 60px;
+    z-index: 100;
+}
+
+.searchbox-sword {
+
+ border: 0px;
+ padding: 2px;
+ background-color: white;
+  height: 20px;
+}
+.sword-border {
+  position: relative;
+  float: left;
+  opacity: 0;
+  display:block;
+
+  top: 0px;
+  //left: 5px;
+ // height: 43px;
+  padding: 10px 0 10px 10px;
+   background-color: $menu_highlight;
+}
+
+.searchbox-button {
+   //height: 43px;
+   padding: 15px 10px 15px 10px;
+}
+
+.fill {
+  background-color: $menu_highlight;
+}

@@ -12,11 +12,51 @@ jQuery(document).ready(function($)  {
 	
 	
   	// Vertical Tabs
-     $( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-     $( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+     //$( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+     //$( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+     
+    // Search Box
+    
+    sword = '.searchbox-sword';
+    sbox = '.sword-border';
+    form = '.indexedsearch';
+    button = '.searchbox-button';
+    color = '#208ccc';
+    
+     $(form).hover( function() {
+		sb_on();
+     }, function() {
+		setTimeout(sb_off,1500);
+	 } );
+     
+     function sb_off() {
+     	if (!( $(sword).hasClass('focus') ) ) {
+     		$(button).animate().removeClass('fill');
+	     	//$(button).animate({'background-color' :'#208ccc'});
+	     	$(sbox).stop().animate({'opacity' :'0'});
+	     	$(form).css("z-index", "100");
+	     	$(button).attr('src','fileadmin/hkk/images/search_blue.png');
+	    }
+     }
+     function sb_on() {
+     	$(button).animate().addClass('fill');
+       // $(button).animate({'background-color' : 'white'});
+     	$(sbox).stop().animate({'opacity' :'1'});
+     	//$(sbox).fadeIn().css("opacity", "1");
+     	$(form).css("z-index", "501");
+     	$(button).attr('src','fileadmin/hkk/images/search_white.png');
+     }
+     
+     $(sword).focus().addClass('focus');
+     
+     $(sword).blur( function() {
+     	$(sword).removeClass('focus');
+     	setTimeout(sb_off,1500);
+     	
+     });
      
      
-     
+          
 	// Opacity Effekt
 	$("#scrollup i").hover(
 		function() {
