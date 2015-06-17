@@ -43,6 +43,31 @@
   background-size: cover;
 }
 /*
+ * TITLE BAR
+ */
+.titlebar {
+  height: 200px;
+  background: url('../images/slider03.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+ }
+.titlebar { 
+  h1 {
+    font-size: 36px !important;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/*
  * SHORTCODES DEFINITIONS
  */
 
@@ -118,6 +143,41 @@
   background: #eee;
 }
 
+.article {
+  background: #fff !important;
+}
+
+.content-wrap {
+  display: table;
+}
+
+.mainl {
+  
+  display: table-cell;
+  border-right: 1px solid black;
+}
+
+.mainl ul li {
+    a {
+      display: block;
+      color: $color_top_bar;
+      margin: 7px 0 !important;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      font-weight: bold;
+    }
+}
+
+.mainr {
+  p {
+    line-height: 1.5em;
+    
+  }
+
+}
 
 /*
  * PARTNER DEFINITIONS

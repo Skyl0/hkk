@@ -1,0 +1,26 @@
+.mainr {
+  
+  ul{
+    margin: 10px 0 ;
+  }
+
+  
+ul li {
+  position: relative;
+  left: 20px;
+  line-height: 30px;
+  // list-style-type: circle !important;  
+}
+
+ ul li:before {
+  content: '\f10c'; /* FontAwesome char code inside the '' */
+  font-family: "FontAwesome"; /* FontAwesome or whatever */
+  display: inline-block;
+  color: $color_top_bar;
+  font-size: 12px;
+  position:relative;
+  bottom: 1px;
+  width: 1.5em; /* same as padding-left set on li */
+  margin-left: -1.5em; /* same as padding-left set on li */
+}
+}

@@ -18,9 +18,11 @@
 @import "parseme/customisenews";
 @import "parseme/scrollup";
 @import "parseme/searchbox";
+@import "parseme/lists";
 
-html {
+html, body {
   font-family: "OpenSans", Arial, sans-serif;
+ // height: 100%;
 }
 
 p {

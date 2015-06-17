@@ -264,20 +264,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 29, ../sass/parseme/_fonts.scss */
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0 0 15px 0;
 }
 
 /* line 34, ../sass/parseme/_fonts.scss */
 h2 {
   font-size: 20px;
-  margin: 0 0 10px 0;
+  font-weight: bold;
+  margin: 5px 0 15px 0;
 }
 
-/* line 39, ../sass/parseme/_fonts.scss */
+/* line 40, ../sass/parseme/_fonts.scss */
 h3 {
   font-size: 18px;
-  margin: 0 0 10px 0;
+  font-weight: bold;
+  margin: 5px 0 15px 0;
+}
+
+/* line 46, ../sass/parseme/_fonts.scss */
+h6 {
+  font-size: 26px;
+  margin: 0 0 15px 0;
 }
 
 /* line 1, ../sass/parseme/_layout.scss */
@@ -334,45 +342,72 @@ h3 {
 }
 
 /*
+ * TITLE BAR
+ */
+/* line 48, ../sass/parseme/_layout.scss */
+.titlebar {
+  height: 200px;
+  background: url("../images/slider03.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* line 55, ../sass/parseme/_layout.scss */
+.titlebar h1 {
+  font-size: 36px !important;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid white;
+}
+/* line 60, ../sass/parseme/_layout.scss */
+.titlebar a {
+  color: white;
+  text-decoration: none;
+}
+/* line 65, ../sass/parseme/_layout.scss */
+.titlebar a:hover {
+  text-decoration: underline;
+}
+
+/*
  * SHORTCODES DEFINITIONS
  */
-/* line 50, ../sass/parseme/_layout.scss */
+/* line 75, ../sass/parseme/_layout.scss */
 .shortcodes .grid-4 {
   color: white;
 }
-/* line 55, ../sass/parseme/_layout.scss */
+/* line 80, ../sass/parseme/_layout.scss */
 .shortcodes .container {
   padding: 40px 0;
 }
 
-/* line 61, ../sass/parseme/_layout.scss */
+/* line 86, ../sass/parseme/_layout.scss */
 .sc {
   background: #208ccc;
 }
 
-/* line 65, ../sass/parseme/_layout.scss */
+/* line 90, ../sass/parseme/_layout.scss */
 .sc .csc-header {
   padding: 0 10px;
 }
 
-/* line 69, ../sass/parseme/_layout.scss */
+/* line 94, ../sass/parseme/_layout.scss */
 .sc .bodytext {
   padding: 0 10px 10px 10px;
 }
 
-/* line 73, ../sass/parseme/_layout.scss */
+/* line 98, ../sass/parseme/_layout.scss */
 .sc {
   display: block;
   min-height: 375px;
 }
 
-/* line 78, ../sass/parseme/_layout.scss */
+/* line 103, ../sass/parseme/_layout.scss */
 .scleft {
   position: relative;
   left: -9px;
 }
 
-/* line 84, ../sass/parseme/_layout.scss */
+/* line 109, ../sass/parseme/_layout.scss */
 .scmiddle {
   position: relative;
   left: -4px;
@@ -381,45 +416,79 @@ h3 {
 /*
  * MAIN DEFINITIONS
  */
-/* line 97, ../sass/parseme/_layout.scss */
+/* line 122, ../sass/parseme/_layout.scss */
 .main p {
   text-align: justify;
 }
-/* line 101, ../sass/parseme/_layout.scss */
+/* line 126, ../sass/parseme/_layout.scss */
 .main .grid-10 {
   border: 1px solid #999;
   margin: 10px 0;
 }
-/* line 106, ../sass/parseme/_layout.scss */
+/* line 131, ../sass/parseme/_layout.scss */
 .main h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 113, ../sass/parseme/_layout.scss */
+/* line 138, ../sass/parseme/_layout.scss */
 .main .container {
   padding: 40px 0;
 }
 
-/* line 117, ../sass/parseme/_layout.scss */
+/* line 142, ../sass/parseme/_layout.scss */
 .main {
   background: #eee;
+}
+
+/* line 146, ../sass/parseme/_layout.scss */
+.article {
+  background: #fff !important;
+}
+
+/* line 150, ../sass/parseme/_layout.scss */
+.content-wrap {
+  display: table;
+}
+
+/* line 154, ../sass/parseme/_layout.scss */
+.mainl {
+  display: table-cell;
+  border-right: 1px solid black;
+}
+
+/* line 161, ../sass/parseme/_layout.scss */
+.mainl ul li a {
+  display: block;
+  color: #208ccc;
+  margin: 7px 0 !important;
+  font-size: 18px;
+  text-decoration: none;
+}
+/* line 169, ../sass/parseme/_layout.scss */
+.mainl ul li a:hover {
+  font-weight: bold;
+}
+
+/* line 175, ../sass/parseme/_layout.scss */
+.mainr p {
+  line-height: 1.5em;
 }
 
 /*
  * PARTNER DEFINITIONS
  */
-/* line 126, ../sass/parseme/_layout.scss */
+/* line 186, ../sass/parseme/_layout.scss */
 .partner p {
   text-align: justify;
 }
-/* line 130, ../sass/parseme/_layout.scss */
+/* line 190, ../sass/parseme/_layout.scss */
 .partner h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 137, ../sass/parseme/_layout.scss */
+/* line 197, ../sass/parseme/_layout.scss */
 .partner .container {
   padding: 40px 0;
 }
@@ -427,40 +496,40 @@ h3 {
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 145, ../sass/parseme/_layout.scss */
+/* line 205, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 152, ../sass/parseme/_layout.scss */
+/* line 212, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
 
-/* line 156, ../sass/parseme/_layout.scss */
+/* line 216, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
 
-/* line 160, ../sass/parseme/_layout.scss */
+/* line 220, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 164, ../sass/parseme/_layout.scss */
+/* line 224, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
   height: 300px;
 }
 
-/* line 170, ../sass/parseme/_layout.scss */
+/* line 230, ../sass/parseme/_layout.scss */
 .bottom a, .sc a, .top a {
   color: white;
   text-decoration: none;
   line-height: 1.5em;
 }
-/* line 176, ../sass/parseme/_layout.scss */
+/* line 236, ../sass/parseme/_layout.scss */
 .bottom a:hover, .sc a:hover, .top a:hover {
   text-decoration: underline;
 }
@@ -468,7 +537,7 @@ h3 {
 /*
  * FOOTER DEFINITIONS
  */
-/* line 184, ../sass/parseme/_layout.scss */
+/* line 244, ../sass/parseme/_layout.scss */
 .footer {
   height: 70px;
   line-height: 70px;
@@ -477,12 +546,12 @@ h3 {
   color: white;
 }
 
-/* line 193, ../sass/parseme/_layout.scss */
+/* line 253, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
 }
-/* line 197, ../sass/parseme/_layout.scss */
+/* line 257, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
@@ -519,6 +588,11 @@ h3 {
 /* line 1, ../sass/parseme/_classes.scss */
 .taright {
   text-align: right;
+}
+
+/* line 5, ../sass/parseme/_classes.scss */
+.hidden {
+  display: none;
 }
 
 /* line 3, ../sass/parseme/_customisenews.scss */
@@ -661,12 +735,39 @@ h3 {
   background-color: #208ccc;
 }
 
-/* line 22, ../sass/screen.scss */
-html {
+/* line 3, ../sass/parseme/_lists.scss */
+.mainr ul {
+  margin: 10px 0;
+}
+/* line 8, ../sass/parseme/_lists.scss */
+.mainr ul li {
+  position: relative;
+  left: 20px;
+  line-height: 30px;
+}
+/* line 15, ../sass/parseme/_lists.scss */
+.mainr ul li:before {
+  content: '\f10c';
+  /* FontAwesome char code inside the '' */
+  font-family: "FontAwesome";
+  /* FontAwesome or whatever */
+  display: inline-block;
+  color: #208ccc;
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+  width: 1.5em;
+  /* same as padding-left set on li */
+  margin-left: -1.5em;
+  /* same as padding-left set on li */
+}
+
+/* line 23, ../sass/screen.scss */
+html, body {
   font-family: "OpenSans", Arial, sans-serif;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 p {
   line-height: 1.4em;
 }

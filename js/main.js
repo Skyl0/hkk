@@ -15,6 +15,18 @@ jQuery(document).ready(function($)  {
      //$( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
      //$( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
      
+     // Follow Page height Fix
+     heightl = $('.mainl').height();
+     heightr = $('.mainr').height();
+     
+     //$('body').prepend('Left:' + heightl + " Right: " + heightr);
+     
+     if (heightl < heightr) {
+     	$('.mainl').css('height', heightr );
+     } else {
+     	$('.mainr').css('height', heightl );
+     }
+     
     // Search Box
     
     sword = '.searchbox-sword';
