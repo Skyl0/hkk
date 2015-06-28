@@ -10,6 +10,10 @@
     width: 100-$mobilefix;
   }
 }
+
+.grid-mobile-11 {
+  @include breakpoint(phone) { width: 95% !important; }
+}
 /*
  * TOP DEFINITIONS
  */
@@ -29,17 +33,24 @@
  * MENU DEFINITIONS
  */
 .menu {
+ // position: relative;
   line-height: 20px;
-  height: 120px;
-  background: white;
+  @include breakpoint(desktop) { height: 120px !important;}
+   @include breakpoint(phone) { height: 100px !important; }
+  background-color: white !important;
 }
 
 .menu img {
-    margin: 20px 0;
+     @include breakpoint(desktop) {margin: 20px 0;}
+       @include breakpoint(phone) {margin: 10px 0;
+       position: absolute;
+       top: 0px;
+       left: $mobilefix;
+       }
 }
 
 .menu ul {
-    margin : 50px 0;
+     @include breakpoint(desktop) {margin : 50px 0;}
 }
 /*
  * SLIDER DEFINITIONS
@@ -59,12 +70,20 @@
   background: url('../images/slider03.jpg') center center no-repeat;
   background-size: cover;
   color: white;
+  
+ }
+ 
+ .titlebar * {
+   z-index: 100;
  }
 .titlebar { 
   h1 {
     font-size: 36px !important;
-    padding: 0 0 20px 0;
+     @include breakpoint(desktop) {padding: 0 0 20px 0;}
+     @include breakpoint(phone) {padding: 20px 0 20px 0;
+     }
     border-bottom: 1px solid white;
+    text-shadow: 2px 2px 4px #000;
   }
   a {
     color: white;
@@ -73,6 +92,10 @@
   
   a:hover {
     text-decoration: underline;
+  }
+  
+  p {
+    text-shadow: 2px 2px 4px #000;
   }
 }
 
@@ -97,7 +120,7 @@
     @include breakpoint(tablet) {background-color: none !important;}
    @include breakpoint(phone) {
      background: $color_shortcodes;
-    margin: 0 0 50px 0 ;
+    margin: 25px 0 ;
    }
 }
 
@@ -167,7 +190,7 @@
  */
 .main {
   p {
-    text-align: justify;
+   // text-align: justify;
   }
   
   .grid-10 {
@@ -183,7 +206,8 @@
 }
 
 .main .container {
- padding: $container_padding;
+  @include breakpoint(desktop) {padding: $container_padding;}
+   @include breakpoint(phone) { padding: 10px 0px; }
 }
 
 .main {
@@ -199,23 +223,53 @@
 }
 
 .mainl {
-  
+   @include breakpoint(desktop) {
   display: table-cell;
-  border-right: 1px solid black;
+  border-right: 1px solid black;}
+   @include breakpoint(phone) {
+   margin-bottom: 10px;
+   }
+}
+
+.mainl h6 {
+   @include breakpoint(phone) { display:none; }
 }
 
 .mainl ul li {
-    a {
-      display: block;
-      color: $color_top_bar;
-      margin: 7px 0 !important;
-      font-size: 18px;
-      text-decoration: none;
+   @include breakpoint(desktop) { 
+        a {
+        display: block;
+        color: $color_top_bar;
+        margin: 7px 0 !important;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        font-weight: bold;
+      }
     }
     
-    a:hover {
-      font-weight: bold;
-    }
+     @include breakpoint(phone) {
+     
+      a {
+      float: left;
+       display: inline-block;
+       padding: 5px;
+       color: $color_top_bar;
+       margin:5px 5px 5px 0;
+       font-size: 14px;
+       text-decoration: none;
+     }
+     
+     #sidecurrent a, a:hover {
+       color: white !important;
+       background-color: $color_top_bar !important;
+       
+     }
+     
+        
+     }
 }
 
 .mainr {
@@ -295,7 +349,7 @@
  * FOOTER DEFINITIONS
  */
 .footer {
-  min-height: 70px;
+ // min-height: 70px;
   @include breakpoint(desktop) { line-height: 70px; }
    @include breakpoint(phone) { line-height: 30px;
    padding: 10px 0; }

@@ -31,13 +31,25 @@ jQuery(document).ready(function($)  {
      heightr = $('.mainr').height();
      
      //$('body').prepend('Left:' + heightl + " Right: " + heightr);
+     $(window).resize( function() {
+ 		resizeMain();
+     });
      
-     if (heightl < heightr) {
-     	$('.mainl').css('height', heightr );
-     } else {
-     	$('.mainr').css('height', heightl );
-     }
-     
+     resizeMain();
+ 
+ 	function resizeMain () {
+ 		     if ($(window).width() > 995 ){
+			     if (heightl < heightr) {
+			     	$('.mainl').css('height', heightr );
+			     } else {
+			     	$('.mainr').css('height', heightl );
+			     }
+		     } else {
+		     	$('.mainl').css('height','auto');
+		     	$('.mainr').css('height','auto');
+		     }
+ 	}
+
     // Search Box
     
     sword = '.searchbox-sword';
@@ -90,8 +102,8 @@ jQuery(document).ready(function($)  {
 		}
 	);
 	
-	$('#burger').click(function(){
-		$('#mm').toggleClass("expanded");
+	$('.burger').click(function(){
+		$('.mm').toggleClass("expanded");
 	});
 		
 	// Scroll Up TODO Tobi wegen Funktion fragen

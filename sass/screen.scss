@@ -29,6 +29,10 @@
 
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
+   @include breakpoint(phone) {
+        overflow:hidden;
+        overflow-y: auto;
+   }
  // height: 100%;
 }
 
@@ -45,7 +49,7 @@ $settings : (
 
 @include gridle_register_state ( mobile , (
   max-width : 995px,
-  gutter-width : 20px
+  gutter-width : 0px
 ) );
 
 // clear each classes :
@@ -59,7 +63,7 @@ $settings : (
 //@include gridle_register_default_states();
 @include gridle_register_state(ipad-landscape, (
   query : "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)",
-  gutter-width : 0
+  gutter-width : 0px
 ));
 
 @include gridle_generate_classes();
