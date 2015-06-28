@@ -1,6 +1,14 @@
 .container {
-  margin: 0 auto;
-  width: 960px;
+
+  
+   @include breakpoint(desktop) {
+      width: 960px;
+    margin: 0 auto;
+   }    
+   @include breakpoint(phone) {
+    margin: 0 0 0 $mobilefix;
+    width: 100-$mobilefix;
+  }
 }
 /*
  * TOP DEFINITIONS
@@ -36,8 +44,9 @@
 /*
  * SLIDER DEFINITIONS
  */
-.slider {
-  height: 350px;
+.slider-outer {
+  min-height: 350px;
+ // width: 100%;
   
   background: url('../images/slider03.jpg') center center no-repeat;
   background-size: cover;
@@ -72,7 +81,7 @@
  */
 
 .shortcodes {
-  .grid-4 {
+  .grid-4, .grid-mobile-11 {
     
     color: white;
    
@@ -84,7 +93,34 @@
 
 }
 .sc {
-  background: $color_shortcodes;
+   @include breakpoint(desktop) {background: $color_shortcodes;}
+    @include breakpoint(tablet) {background-color: none !important;}
+   @include breakpoint(phone) {
+     background: $color_shortcodes;
+    margin: 0 0 50px 0 ;
+   }
+}
+
+.sc-image {
+   @include breakpoint(tablet) {
+        float:left !important;
+   }
+   @include breakpoint(phone) {
+     float: none;
+     text-align: left;
+      }
+
+   
+}
+.sc-content {
+   @include breakpoint(tablet) {min-height: 157px;
+    padding: 10px 0 10px 305px !important; // 305 = image width shortcodes
+    }
+   @include breakpoint(phone) {
+     background: $color_shortcodes;
+     
+     padding: 10px;
+     }
 }
 
 .sc .csc-header {
@@ -96,19 +132,30 @@
 }
 
 .sc {
-  display: block;
+  @include breakpoint(desktop) {
+     display: block;
   min-height: 375px;
+  }
+   @include breakpoint(phone) {
+     display: block;
+   }
 }
 
 .scleft {
-  position: relative;
+  
+   @include breakpoint(desktop) {
+     position: relative;
   left: -9px;
+   }
+  
 
 }
 
 .scmiddle {
+   @include breakpoint(desktop) {
   position: relative;
   left: -4px;
+  }
  // margin: 0 5px !important;
 }
 
@@ -209,21 +256,27 @@
   font-size: $bottom;
 }
 
-.bottom .container {
-  padding: $container_padding;
+.bottom {
+    .container {
+      padding: $container_padding;
+    }
+  
+     p {
+      margin: 0 0 10px 0 ;
+    }
+    .logo_bottom img {
+      height: 300px;
+    }
+    
+    .grid-mobile-11 {
+      margin-bottom: 50px;
+    }
 }
-
-.bottom p {
-  margin: 0 0 10px 0 ;
-}
-
 .contact_bottom .fa {
   width: 25px;
 }
 
-.bottom .logo_bottom img {
-  height: 300px;
-}
+
 
 .bottom , .sc , .top {
   
@@ -242,10 +295,13 @@
  * FOOTER DEFINITIONS
  */
 .footer {
-  height: 70px;
-  line-height: 70px;
+  min-height: 70px;
+  @include breakpoint(desktop) { line-height: 70px; }
+   @include breakpoint(phone) { line-height: 30px;
+   padding: 10px 0; }
   background: $color_footer;  
-  font-size: $small;
+   @include breakpoint(desktop) {font-size: $small; }
+    @include breakpoint(phone) { font-size: $smaller; }
   color: white;
 }
 
@@ -253,6 +309,7 @@
   a {
   color: white;
   text-decoration: none;
+  display: inline;
   }
   a:hover {
     text-decoration: underline;

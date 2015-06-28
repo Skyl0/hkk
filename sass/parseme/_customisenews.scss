@@ -29,57 +29,92 @@
   }
   
   .date_box {
-    position: relative;
-    display: block;
-    float: left;
-    background: $color_top_bar;
-    min-height: 150px;
-    color: white;
-    font-size: 24px;
-    
-    vertical-align: bottom;
-    margin-right: 10px;
-    width: 150px;
+    @include breakpoint(desktop) { 
+      position: relative;
+      display: block;
+      float: left;
+      background: $color_top_bar;
+      min-height: 150px;
+      color: white;
+      font-size: 24px;
+      
+      vertical-align: bottom;
+      margin-right: 10px;
+      width: 150px;
+    }
     
   }
   
   .date_box_odd {
-    position: relative;
-    display: block;
-    float: right;
-    background: $color_top_bar;
-    min-height: 150px;
-    color: white;
-    font-size: 24px;
-    
-    vertical-align: bottom;
-    margin-left: 10px;
-    width: 150px;
+    @include breakpoint(desktop) {
+      position: relative;
+      display: block;
+      float: right;
+      background: $color_top_bar;
+      min-height: 150px;
+      color: white;
+      font-size: 24px;
+      
+      vertical-align: bottom;
+      margin-left: 10px;
+      width: 150px;
+    }
       }
   
   .date_box #date {
-    position: absolute;
-    font-weight: bold;
+    @include breakpoint(desktop) { position: absolute;
     bottom: 0px;
     right: 0px;
+    }
+     @include breakpoint(phone) { 
+       position: relative;
+       height: 1px;
+       color:  $color_top_bar;
+       opacity: 0.5;
+       font-size: 100px;
+       bottom: 1px;
+       z-index: 0;
+    right: 0px;
+     }
+    font-weight: bold;
+    
     padding: 5px;
     }
     
   .date_box_odd #date {
-    position: absolute;
-    font-weight: bold;
+    @include breakpoint(desktop) { position: absolute;
     bottom: 0px;
-    left: 0px;
+    left: 0px;}
+     @include breakpoint(phone) { position: relative;
+     color:  $color_top_bar;
+     height: 1px;
+      opacity: 0.5;
+       font-size: 100px;
+       bottom: 1px;
+        z-index: 0;
+    left: 0px; }
+    font-weight: bold;
+    
+    
     padding: 5px;
     }
     
     .news-odd {
-      
+       @include breakpoint(desktop) {
     margin-left: 150px;
-      
+      }
     }
     
+   .article {
+      @include breakpoint(phone) {
+        padding: 0 10px !important;
+       // margin-left: $mobilefix;
+        }
+   }
    
+   .article .header , .article .bodytext {
+     z-index : 100;
+   }
 
     
 }

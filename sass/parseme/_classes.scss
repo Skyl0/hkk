@@ -1,7 +1,23 @@
 .taright {
-  text-align: right;
+   @include breakpoint(desktop) {text-align: right;}
+}
+
+.taright-mobile {
+    @include breakpoint(phone) {text-align: right;}
 }
 
 .hidden  {
   display:none;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

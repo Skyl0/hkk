@@ -6,6 +6,17 @@
 
 jQuery(document).ready(function($)  {
 	
+	// Slider
+	
+	//$('.slider').children().addClass('slide');
+	
+	//$('.flexslider').flexslider();
+	
+	// ShortCode Ansicht
+	
+	$('.sc > div:nth-child(1)').addClass('sc-image');
+	$('.sc > div:nth-child(2)').addClass('sc-content');
+	 
 	// News Ansicht
 	$('.news-list-view > div:nth-child(even)').addClass('news-odd').removeClass('no-gutter-left').addClass('no-gutter-right');
 	$('.news-list-view > div:nth-child(even) div.date_box').removeClass('date_box').addClass('date_box_odd');

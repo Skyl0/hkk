@@ -6,8 +6,10 @@
 @import "compass/reset";
 @import "gridle/gridle";
 
-@import "parseme/fonts";
+@import "parseme/_mediaqueries";
+
 @import "parseme/variables";
+@import "parseme/fonts";
 
 @import "parseme/layout";
 
@@ -19,6 +21,11 @@
 @import "parseme/scrollup";
 @import "parseme/searchbox";
 @import "parseme/lists";
+@import "parseme/slider";
+
+
+
+
 
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
@@ -37,8 +44,8 @@ $settings : (
 @include gridle_setup($settings);
 
 @include gridle_register_state ( mobile , (
-  max-width : 480px,
-  gutter-width : 10px
+  max-width : 995px,
+  gutter-width : 20px
 ) );
 
 // clear each classes :

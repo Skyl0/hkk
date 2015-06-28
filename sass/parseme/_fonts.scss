@@ -28,7 +28,8 @@ font-style: italic;
 
 h1 {
   font-size: 26px;
-  margin: 0 0 15px 0 ;
+   @include breakpoint(desktop) {margin: 0 0 15px 0 ;}
+    @include breakpoint(phone) {margin: 0 0 15px 0; }//removed $mobilefix; }
 }
 
 h2 {
