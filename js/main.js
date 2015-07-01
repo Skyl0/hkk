@@ -60,24 +60,28 @@ jQuery(document).ready(function($)  {
     
      $(form).hover( function() {
 		sb_on();
+		
      }, function() {
-		setTimeout(sb_off,1500);
+		setTimeout(sb_off,1500);		
 	 } );
      
      function sb_off() {
      	if (!( $(sword).hasClass('focus') ) ) {
      		$(button).animate().removeClass('fill');
+     		//$(button).animate({"background-color":"#fff"});
 	     	//$(button).animate({'background-color' :'#208ccc'});
-	     	$(sbox).stop().animate({'opacity' :'0'});
+	     	//$(sbox).stop().animate({'opacity' :'0'});
+	     	$(sbox).css("opacity", "0");
 	     	$(form).css("z-index", "100");
 	     	$(button).attr('src','fileadmin/hkk/images/search_blue.png');
 	    }
      }
      function sb_on() {
      	$(button).animate().addClass('fill');
+     	//$(button).animate({"background-color":"#208ccc"});
        // $(button).animate({'background-color' : 'white'});
-     	$(sbox).stop().animate({'opacity' :'1'});
-     	//$(sbox).fadeIn().css("opacity", "1");
+     	//$(sbox).stop().animate({'opacity' :'1'});
+     	$(sbox).css("opacity", "1");
      	$(form).css("z-index", "501");
      	$(button).attr('src','fileadmin/hkk/images/search_white.png');
      }
@@ -85,7 +89,7 @@ jQuery(document).ready(function($)  {
      $(sword).focus().addClass('focus');
      
      $(sword).blur( function() {
-     	$(sword).removeClass('focus');
+     	$(this).removeClass('focus');
      	setTimeout(sb_off,1500);
      	
      });

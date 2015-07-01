@@ -15,37 +15,67 @@
 p.flex-caption {
   
   position: relative;
- 
+  @include breakpoint(desktop) {
   top: 150px;
   left: 0px;
-  z-index: 500;
-  color: black;
- // text-shadow: 2px 2px 5px #000;
+  }
+   @include breakpoint(phone) {
+     top: 120px;
+  left: 20px;
+   }
+  z-index: 5;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
    @include breakpoint(desktop) {
       width: 960px;
     margin: 0 auto;
    }    
  }
  
+ .flex-control-nav {
+   z-index: 500 !important;
+  // top: -20px !important;
+ }
+ 
  p.flex-caption strong {
-   padding: 10px;
+  
   // margin-bottom: 24px;
-    background: white;
-    color: $color_top_bar;
-   font-size: 28px;
-   line-height: 42px;
+    background: none;
+    border-bottom: 1px solid white;
+    
+  @include breakpoint(desktop) { 
+     font-size: 36px;
+   line-height: 48px;
+    padding-bottom: 10px;
+     }
+    @include breakpoint(phone) { 
+      font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+    }
    font-weight: bold;
    z-index: 11;
  }
  p.flex-caption span {
    position: relative;
-   font-size: 20px;
-   top: 24px;
+    @include breakpoint(desktop) {
+      font-size: 20px;
+      top: 24px;
+       line-height: 24px;
+    //   padding: 10px;
+    }
+    
+     @include breakpoint(phone) {
+       font-size: 14px;
+      top: 10px;
+       line-height: 22px;
+      // padding: 4px;
+  }
    z-index: 10;
   // font-weight: bold;
-   line-height: 24px;
-   padding: 10px;
-  background: white;
+  
+  
+ // background: white;
   }
 /* ====================================================================================================================
  * FONT-FACE
@@ -84,6 +114,7 @@ p.flex-caption {
 .flexslider {
   margin: 0;
   padding: 0;
+ 
  // overflow: hidden !important;
 }
 .flexslider .slides > li {
@@ -93,6 +124,7 @@ p.flex-caption {
 .flexslider .slides img {
   width: 100%;
   display: block;
+   @include breakpoint(phone) { min-height: 150px; width: auto;}
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -115,7 +147,9 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 60px;
+  margin: -67px 0 60px;
+ // height: 304px;
+  top: -20px;
   background: #ffffff;
   border: 0px solid #ffffff;
   position: relative;
@@ -137,7 +171,7 @@ html[xmlns] .flexslider .slides {
  // width: auto;
 }
 .flex-viewport {
-  max-height: 400px;
+  max-height: 304px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -145,28 +179,32 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 .loading .flex-viewport {
-  max-height: 400px;
+  max-height: 200px;
 }
 .carousel li {
   margin-right: 5px;
 }
+
 .flex-direction-nav {
   *height: 0;
+   @include breakpoint(phone) { 
+     display: none!important; 
+     }
 }
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 60px;
-  height: 60px;
-  margin: -30px 0 0;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
   position: absolute;
   top: 50%;
   z-index: 10;
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -175,11 +213,11 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-family: "FontAwesome";
-  font-size: 60px;
+  font-size: 40px;
   display: inline-block;
   content: '\f053';
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f054';
@@ -238,7 +276,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -40px;
+  bottom: 10px; // was -40
   text-align: center;
 }
 .flex-control-nav li {
@@ -248,28 +286,29 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 16px;
+  height: 16px;
   display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background: #fff;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #fff;
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 .flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
+  background: #aaa;
+  background: rgba(255, 255, 255, 1.0);
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: #fff;
+  background: rgba(255, 255, 255, 1.0);
   cursor: default;
 }
 .flex-control-thumbs {

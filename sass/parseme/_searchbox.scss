@@ -1,16 +1,17 @@
 .indexedsearch {
   position: relative;
-  top: -80px;
+  top: -31px;
   float: right;
   height: 60px;
     z-index: 100;
+    transition: all 0.3s;
 }
 
 .searchbox-sword {
 
  border: 0px;
  padding: 2px;
- background-color: white;
+ //background-color: white;
   height: 20px;
 }
 .sword-border {
@@ -32,5 +33,5 @@
 }
 
 .fill {
-  background-color: $menu_highlight;
+  background-color: $menu_highlight !important;
 }

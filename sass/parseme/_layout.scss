@@ -1,5 +1,5 @@
 .container {
-
+z-index: 50;
   
    @include breakpoint(desktop) {
       width: 960px;
@@ -35,7 +35,8 @@
 .menu {
  // position: relative;
   line-height: 20px;
-  @include breakpoint(desktop) { height: 120px !important;}
+  @include breakpoint(desktop) { height: 120px !important;
+  }
    @include breakpoint(phone) { height: 100px !important; }
   background-color: white !important;
 }
@@ -50,7 +51,7 @@
 }
 
 .menu ul {
-     @include breakpoint(desktop) {margin : 50px 0;}
+     @include breakpoint(desktop) {margin : 50px 0 0 0;}
 }
 /*
  * SLIDER DEFINITIONS
@@ -61,7 +62,7 @@
   display: block;
   background: none;
   width: 100%;
-  height: auto;
+ // height: 304px;
  @include breakpoint(phone) {  
    
  // width: 100%;
@@ -87,7 +88,7 @@
 .titlebar { 
   h1 {
     font-size: 36px !important;
-     @include breakpoint(desktop) {padding: 0 0 20px 0;}
+     @include breakpoint(desktop) {padding: 20px 0 20px 0;}
      @include breakpoint(phone) {padding: 20px 0 20px 0;
      }
     border-bottom: 1px solid white;

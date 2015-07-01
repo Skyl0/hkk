@@ -7,6 +7,10 @@
   background-image: url(../images/scrollup_ia.png);
 }
 
+.fixscrollup div {
+  @include breakpoint(phone) { top: 40px !important;}
+}
+
 .scrollup a {
   height: 59px; width: 59px; display: block;
 //  position: relative;
