@@ -108,6 +108,7 @@ jQuery(document).ready(function($)  {
 	
 	$('.burger').click(function(){
 		$('.mm').toggleClass("expanded");
+		$('.ulmenu').slideToggle("fast");
 	});
 		
 	// Scroll Up TODO Tobi wegen Funktion fragen
