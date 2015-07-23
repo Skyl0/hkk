@@ -1644,19 +1644,59 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
-/* line 30, ../sass/screen.scss */
+/* line 1, ../sass/parseme/_forms.scss */
+.csc-form-element {
+  min-height: 20px;
+  margin: 0 0 20px 0;
+  padding: 2px;
+}
+
+/* line 7, ../sass/parseme/_forms.scss */
+.csc-form-element input[type="text"] {
+  border: 1px solid #208ccc;
+  margin: 5px 0 5px;
+}
+
+/* line 12, ../sass/parseme/_forms.scss */
+.csc-form-element textarea {
+  border: 1px solid #208ccc;
+  margin: 5px 0 5px;
+}
+
+/* line 17, ../sass/parseme/_forms.scss */
+.csc-form-element input[type="submit"] {
+  border: 1px solid #208ccc;
+  background-color: white;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* line 29, ../sass/parseme/_forms.scss */
+.csc-form-element input[type="submit"]::before {
+  content: "\f101";
+  font-family: "FontAwesome";
+}
+
+/* line 36, ../sass/parseme/_forms.scss */
+*[type="submit"]:hover {
+  color: #208ccc;
+}
+
+/* line 31, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
 }
 @media (max-width: 995px) {
-  /* line 30, ../sass/screen.scss */
+  /* line 31, ../sass/screen.scss */
   html, body {
     overflow: hidden;
     overflow-y: auto;
   }
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 p {
   line-height: 1.4em;
 }
