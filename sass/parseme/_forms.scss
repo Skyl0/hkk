@@ -1,17 +1,23 @@
 .csc-form-element {
   min-height: 20px;
   margin: 0 0 20px 0;
-  padding: 2px;
+ 
 }
 
 .csc-form-element input[type="text"]  {
   border: 1px solid $color_top_bar;
-  margin: 5px 0 5px ;
+  margin: 10px 0 ;
+   padding: 2px;
+  @include breakpoint(desktop) { width: 50%; }
+  @include breakpoint(phone) { width: 70%; }
 }
 
 .csc-form-element textarea  {
   border: 1px solid $color_top_bar;
-  margin: 5px 0 5px ;
+  margin: 10px 0  ;
+   padding: 2px;
+   @include breakpoint(desktop) { width: 50%; }
+   @include breakpoint(phone) { width: 70%; }
 }
 
 .csc-form-element input[type="submit"]
@@ -22,16 +28,21 @@
    text-decoration: none;
    cursor: pointer;
    transition: all 0.5s;
+    padding: 5px;
  }
 
+.csc-form-element em {
+  text-transform: none!important;
+  font-style: italic;
+  font-size: 0.8em;
+  color: $color_top_bar;
+}
 
+.csc-mailform {
+  margin: 20px 0 0 0 ;
+}
   
- .csc-form-element input[type="submit"]::before {
-       content: "\f101";
-       font-family: "FontAwesome";
-  
-  }
-  
+   
  
  *[type="submit"]:hover {
 

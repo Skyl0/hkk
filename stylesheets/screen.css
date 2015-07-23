@@ -558,63 +558,64 @@ h6 {
   border: 1px solid #999;
   margin: 10px 0;
 }
-/* line 213, ../sass/parseme/_layout.scss */
+/* line 215, ../sass/parseme/_layout.scss */
 .main h1::before {
   content: "\f101";
   font-family: "FontAwesome";
+  width: 25px;
 }
 
 @media (min-width: 996px) {
-  /* line 220, ../sass/parseme/_layout.scss */
+  /* line 222, ../sass/parseme/_layout.scss */
   .main .container {
     padding: 40px 0;
   }
 }
 @media (max-width: 995px) {
-  /* line 220, ../sass/parseme/_layout.scss */
+  /* line 222, ../sass/parseme/_layout.scss */
   .main .container {
     padding: 10px 0px;
   }
 }
 
-/* line 225, ../sass/parseme/_layout.scss */
+/* line 227, ../sass/parseme/_layout.scss */
 .main {
   background: #eee;
 }
 
-/* line 229, ../sass/parseme/_layout.scss */
+/* line 231, ../sass/parseme/_layout.scss */
 .article {
   background: #fff !important;
 }
 
-/* line 233, ../sass/parseme/_layout.scss */
+/* line 235, ../sass/parseme/_layout.scss */
 .content-wrap {
   display: table;
 }
 
 @media (min-width: 996px) {
-  /* line 237, ../sass/parseme/_layout.scss */
+  /* line 239, ../sass/parseme/_layout.scss */
   .mainl {
     display: table-cell;
     border-right: 1px solid black;
   }
 }
 @media (max-width: 995px) {
-  /* line 237, ../sass/parseme/_layout.scss */
+  /* line 239, ../sass/parseme/_layout.scss */
   .mainl {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 995px) {
-  /* line 246, ../sass/parseme/_layout.scss */
+  /* line 248, ../sass/parseme/_layout.scss */
   .mainl h6 {
     display: none;
   }
 }
 
 @media (min-width: 996px) {
-  /* line 252, ../sass/parseme/_layout.scss */
+  /* line 254, ../sass/parseme/_layout.scss */
   .mainl ul li a {
     display: block;
     color: #208ccc;
@@ -622,13 +623,13 @@ h6 {
     font-size: 18px;
     text-decoration: none;
   }
-  /* line 260, ../sass/parseme/_layout.scss */
+  /* line 262, ../sass/parseme/_layout.scss */
   .mainl ul li a:hover {
     font-weight: bold;
   }
 }
 @media (max-width: 995px) {
-  /* line 267, ../sass/parseme/_layout.scss */
+  /* line 269, ../sass/parseme/_layout.scss */
   .mainl ul li a {
     float: left;
     display: inline-block;
@@ -638,14 +639,14 @@ h6 {
     font-size: 14px;
     text-decoration: none;
   }
-  /* line 277, ../sass/parseme/_layout.scss */
+  /* line 279, ../sass/parseme/_layout.scss */
   .mainl ul li #sidecurrent a, .mainl ul li a:hover {
     color: white !important;
     background-color: #208ccc !important;
   }
 }
 
-/* line 288, ../sass/parseme/_layout.scss */
+/* line 290, ../sass/parseme/_layout.scss */
 .mainr p {
   line-height: 1.5em;
 }
@@ -653,17 +654,17 @@ h6 {
 /*
  * PARTNER DEFINITIONS
  */
-/* line 299, ../sass/parseme/_layout.scss */
+/* line 301, ../sass/parseme/_layout.scss */
 .partner p {
   text-align: justify;
 }
-/* line 303, ../sass/parseme/_layout.scss */
+/* line 305, ../sass/parseme/_layout.scss */
 .partner h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 310, ../sass/parseme/_layout.scss */
+/* line 312, ../sass/parseme/_layout.scss */
 .partner .container {
   padding: 40px 0;
 }
@@ -671,42 +672,42 @@ h6 {
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 318, ../sass/parseme/_layout.scss */
+/* line 320, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 326, ../sass/parseme/_layout.scss */
+/* line 328, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
-/* line 330, ../sass/parseme/_layout.scss */
+/* line 332, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
-/* line 333, ../sass/parseme/_layout.scss */
+/* line 335, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
-  height: 300px;
+  height: 273px;
 }
-/* line 337, ../sass/parseme/_layout.scss */
+/* line 339, ../sass/parseme/_layout.scss */
 .bottom .grid-mobile-11 {
   margin-bottom: 50px;
 }
 
-/* line 341, ../sass/parseme/_layout.scss */
+/* line 343, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 349, ../sass/parseme/_layout.scss */
+/* line 351, ../sass/parseme/_layout.scss */
 .bottom a, .sc a, .top a {
   color: white;
   text-decoration: none;
   line-height: 1.5em;
 }
-/* line 355, ../sass/parseme/_layout.scss */
+/* line 357, ../sass/parseme/_layout.scss */
 .bottom a:hover, .sc a:hover, .top a:hover {
   text-decoration: underline;
 }
@@ -714,44 +715,44 @@ h6 {
 /*
  * FOOTER DEFINITIONS
  */
-/* line 363, ../sass/parseme/_layout.scss */
+/* line 365, ../sass/parseme/_layout.scss */
 .footer {
   background: #333333;
   color: white;
 }
 @media (min-width: 996px) {
-  /* line 363, ../sass/parseme/_layout.scss */
+  /* line 365, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 70px;
   }
 }
 @media (max-width: 995px) {
-  /* line 363, ../sass/parseme/_layout.scss */
+  /* line 365, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 30px;
     padding: 10px 0;
   }
 }
 @media (min-width: 996px) {
-  /* line 363, ../sass/parseme/_layout.scss */
+  /* line 365, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 13px;
   }
 }
 @media (max-width: 995px) {
-  /* line 363, ../sass/parseme/_layout.scss */
+  /* line 365, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 11px;
   }
 }
 
-/* line 375, ../sass/parseme/_layout.scss */
+/* line 377, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
   display: inline;
 }
-/* line 380, ../sass/parseme/_layout.scss */
+/* line 382, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
@@ -956,7 +957,7 @@ strong {
 }
 
 /* line 56, ../sass/parseme/_classes.scss */
-p.bodytext a {
+.team-col-left a, .team-col-right a {
   color: #000;
 }
 
@@ -1162,14 +1163,16 @@ p.bodytext a {
 /* line 3, ../sass/parseme/_lists.scss */
 .mainr ul {
   margin: 10px 0;
+  background-color: white;
+  padding: 10px;
 }
-/* line 8, ../sass/parseme/_lists.scss */
+/* line 10, ../sass/parseme/_lists.scss */
 .mainr ul li {
   position: relative;
   left: 20px;
   line-height: 30px;
 }
-/* line 15, ../sass/parseme/_lists.scss */
+/* line 17, ../sass/parseme/_lists.scss */
 .mainr ul li:before {
   content: '\f10c';
   /* FontAwesome char code inside the '' */
@@ -1648,22 +1651,47 @@ html[xmlns] .flexslider .slides {
 .csc-form-element {
   min-height: 20px;
   margin: 0 0 20px 0;
-  padding: 2px;
 }
 
 /* line 7, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="text"] {
   border: 1px solid #208ccc;
-  margin: 5px 0 5px;
+  margin: 10px 0;
+  padding: 2px;
+}
+@media (min-width: 996px) {
+  /* line 7, ../sass/parseme/_forms.scss */
+  .csc-form-element input[type="text"] {
+    width: 50%;
+  }
+}
+@media (max-width: 995px) {
+  /* line 7, ../sass/parseme/_forms.scss */
+  .csc-form-element input[type="text"] {
+    width: 70%;
+  }
 }
 
-/* line 12, ../sass/parseme/_forms.scss */
+/* line 15, ../sass/parseme/_forms.scss */
 .csc-form-element textarea {
   border: 1px solid #208ccc;
-  margin: 5px 0 5px;
+  margin: 10px 0;
+  padding: 2px;
+}
+@media (min-width: 996px) {
+  /* line 15, ../sass/parseme/_forms.scss */
+  .csc-form-element textarea {
+    width: 50%;
+  }
+}
+@media (max-width: 995px) {
+  /* line 15, ../sass/parseme/_forms.scss */
+  .csc-form-element textarea {
+    width: 70%;
+  }
 }
 
-/* line 17, ../sass/parseme/_forms.scss */
+/* line 23, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="submit"] {
   border: 1px solid #208ccc;
   background-color: white;
@@ -1671,32 +1699,45 @@ html[xmlns] .flexslider .slides {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s;
+  padding: 5px;
 }
 
-/* line 29, ../sass/parseme/_forms.scss */
-.csc-form-element input[type="submit"]::before {
-  content: "\f101";
-  font-family: "FontAwesome";
+/* line 34, ../sass/parseme/_forms.scss */
+.csc-form-element em {
+  text-transform: none !important;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #208ccc;
 }
 
-/* line 36, ../sass/parseme/_forms.scss */
+/* line 41, ../sass/parseme/_forms.scss */
+.csc-mailform {
+  margin: 20px 0 0 0;
+}
+
+/* line 47, ../sass/parseme/_forms.scss */
 *[type="submit"]:hover {
   color: #208ccc;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 1, ../sass/parseme/_cemanipulate.scss */
+#c1 img {
+  margin: 0 0 20px 0;
+}
+
+/* line 32, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
 }
 @media (max-width: 995px) {
-  /* line 31, ../sass/screen.scss */
+  /* line 32, ../sass/screen.scss */
   html, body {
     overflow: hidden;
     overflow-y: auto;
   }
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 p {
   line-height: 1.4em;
 }

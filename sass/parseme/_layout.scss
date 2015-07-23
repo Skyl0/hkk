@@ -209,16 +209,18 @@ z-index: 50;
     border: 1px solid #999;
     margin: 10px 0 ;
   }
-  
+  h1 {
+ //   padding: 0 0 0 10px;
+  }
    h1::before {
        content: "\f101";
        font-family: "FontAwesome";
-  
+       width : 25px;
   }
 }
 
 .main .container {
-  @include breakpoint(desktop) {padding: $container_padding;}
+  @include breakpoint(desktop) { padding: $container_padding; }
    @include breakpoint(phone) { padding: 10px 0px; }
 }
 
@@ -331,7 +333,7 @@ z-index: 50;
       margin: 0 0 10px 0 ;
     }
     .logo_bottom img {
-      height: 300px;
+      height: 273px;
     }
     
     .grid-mobile-11 {
