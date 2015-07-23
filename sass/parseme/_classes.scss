@@ -25,3 +25,35 @@
 .of-hidden {
   overflow: hidden !important;
 }
+
+.bodytext {
+  margin: 0 0 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*
+ * TEAM Formatting
+ */
+
+.team-col-left {
+  width: 50%;
+  clear: left;
+  float:left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-col-right {
+  width: 50%;
+  float:left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p.bodytext a {
+  color: #000;
+}
+

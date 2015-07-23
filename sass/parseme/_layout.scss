@@ -24,6 +24,7 @@ z-index: 50;
   height: 40px;
   color: white;
   font-size: $normal;
+//  position: fixed;
 }
 .top span {
   margin: 0 0 0 10px;   
@@ -35,6 +36,7 @@ z-index: 50;
 .menu {
  // position: relative;
   line-height: 20px;
+  //position: fixed;
   @include breakpoint(desktop) { height: 120px !important;
   }
    @include breakpoint(phone) { height: 100px !important; }

@@ -17,10 +17,11 @@ ul li {
   font-family: "FontAwesome"; /* FontAwesome or whatever */
   display: inline-block;
   color: $color_top_bar;
-  font-size: 12px;
+  font-size: 14px;
+  height: 1.6em;
   position:relative;
   bottom: 1px;
-  width: 1.5em; /* same as padding-left set on li */
+  width: 1.6em; /* same as padding-left set on li */
   margin-left: -1.5em; /* same as padding-left set on li */
 }
 }
