@@ -37,10 +37,10 @@
       min-height: 150px;
       color: white;
       font-size: 24px;
-      
+      padding: 10px;
       vertical-align: bottom;
       margin-right: 10px;
-      width: 150px;
+      width: 130px;
     }
     
   }
@@ -54,17 +54,20 @@
       min-height: 150px;
       color: white;
       font-size: 24px;
+      padding: 10px;
       
       vertical-align: bottom;
       margin-left: 10px;
-      width: 150px;
+      width: 130px;
     }
       }
   
   .date_box #date {
-    @include breakpoint(desktop) { position: absolute;
+    @include breakpoint(desktop) { 
+      position: absolute;
     bottom: 0px;
     right: 0px;
+    padding: 10px;
     }
      @include breakpoint(phone) { 
        position: relative;
@@ -84,7 +87,9 @@
   .date_box_odd #date {
     @include breakpoint(desktop) { position: absolute;
     bottom: 0px;
-    left: 0px;}
+    left: 0px;
+    padding: 10px;
+    }
      @include breakpoint(phone) { position: relative;
      color:  $color_top_bar;
      height: 1px;

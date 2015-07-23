@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -265,38 +266,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 29, ../sass/parseme/_fonts.scss */
 h1 {
   font-size: 26px;
-  line-height: 32px;
+  line-height: 36px;
   clear: both;
 }
 @media (min-width: 996px) {
   /* line 29, ../sass/parseme/_fonts.scss */
   h1 {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0px;
   }
 }
 @media (max-width: 995px) {
   /* line 29, ../sass/parseme/_fonts.scss */
   h1 {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0px;
   }
 }
 
 /* line 37, ../sass/parseme/_fonts.scss */
-h2 {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
-  margin: 15px 0 15px 0;
+.sc h1 {
+  margin-left: 5px !important;
 }
 
-/* line 44, ../sass/parseme/_fonts.scss */
+/* line 41, ../sass/parseme/_fonts.scss */
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 25px 0 15px 0;
+}
+
+/* line 48, ../sass/parseme/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 5px 0 15px 0;
+  margin: 25px 0 15px 0;
 }
 
-/* line 50, ../sass/parseme/_fonts.scss */
+/* line 54, ../sass/parseme/_fonts.scss */
 h6 {
   font-size: 26px;
   margin: 0 0 15px 0;
@@ -517,14 +523,14 @@ h6 {
 
 /* line 165, ../sass/parseme/_layout.scss */
 .sc .bodytext {
-  padding: 0 10px 10px 10px;
+  padding: 0 15px 15px 15px;
 }
 
 @media (min-width: 996px) {
   /* line 169, ../sass/parseme/_layout.scss */
   .sc {
     display: block;
-    min-height: 375px;
+    min-height: 400px;
   }
 }
 @media (max-width: 995px) {
@@ -554,68 +560,74 @@ h6 {
  * MAIN DEFINITIONS
  */
 /* line 208, ../sass/parseme/_layout.scss */
-.main .grid-10 {
+.main .grid-10, .mainfollow .grid-10 {
   border: 1px solid #999;
   margin: 10px 0;
 }
 /* line 215, ../sass/parseme/_layout.scss */
-.main h1::before {
+.main h1::before, .mainfollow h1::before {
   content: "\f101";
   font-family: "FontAwesome";
   width: 25px;
+  margin-right: 10px;
 }
 
 @media (min-width: 996px) {
-  /* line 222, ../sass/parseme/_layout.scss */
-  .main .container {
+  /* line 223, ../sass/parseme/_layout.scss */
+  .main .container, .mainfollow .container {
     padding: 40px 0;
   }
 }
 @media (max-width: 995px) {
-  /* line 222, ../sass/parseme/_layout.scss */
-  .main .container {
+  /* line 223, ../sass/parseme/_layout.scss */
+  .main .container, .mainfollow .container {
     padding: 10px 0px;
   }
 }
 
-/* line 227, ../sass/parseme/_layout.scss */
+/* line 228, ../sass/parseme/_layout.scss */
 .main {
   background: #eee;
 }
 
-/* line 231, ../sass/parseme/_layout.scss */
+/* line 232, ../sass/parseme/_layout.scss */
+.mainfollow {
+  background: #fff;
+}
+
+/* line 236, ../sass/parseme/_layout.scss */
 .article {
   background: #fff !important;
 }
 
-/* line 235, ../sass/parseme/_layout.scss */
+/* line 240, ../sass/parseme/_layout.scss */
 .content-wrap {
   display: table;
 }
 
 @media (min-width: 996px) {
-  /* line 239, ../sass/parseme/_layout.scss */
+  /* line 244, ../sass/parseme/_layout.scss */
   .mainl {
     display: table-cell;
     border-right: 1px solid black;
   }
 }
 @media (max-width: 995px) {
-  /* line 239, ../sass/parseme/_layout.scss */
+  /* line 244, ../sass/parseme/_layout.scss */
   .mainl {
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 995px) {
-  /* line 248, ../sass/parseme/_layout.scss */
+  /* line 253, ../sass/parseme/_layout.scss */
   .mainl h6 {
     display: none;
   }
 }
 
 @media (min-width: 996px) {
-  /* line 254, ../sass/parseme/_layout.scss */
+  /* line 259, ../sass/parseme/_layout.scss */
   .mainl ul li a {
     display: block;
     color: #208ccc;
@@ -623,13 +635,13 @@ h6 {
     font-size: 18px;
     text-decoration: none;
   }
-  /* line 262, ../sass/parseme/_layout.scss */
+  /* line 267, ../sass/parseme/_layout.scss */
   .mainl ul li a:hover {
     font-weight: bold;
   }
 }
 @media (max-width: 995px) {
-  /* line 269, ../sass/parseme/_layout.scss */
+  /* line 274, ../sass/parseme/_layout.scss */
   .mainl ul li a {
     float: left;
     display: inline-block;
@@ -639,14 +651,14 @@ h6 {
     font-size: 14px;
     text-decoration: none;
   }
-  /* line 279, ../sass/parseme/_layout.scss */
+  /* line 284, ../sass/parseme/_layout.scss */
   .mainl ul li #sidecurrent a, .mainl ul li a:hover {
     color: white !important;
     background-color: #208ccc !important;
   }
 }
 
-/* line 290, ../sass/parseme/_layout.scss */
+/* line 295, ../sass/parseme/_layout.scss */
 .mainr p {
   line-height: 1.5em;
 }
@@ -654,17 +666,17 @@ h6 {
 /*
  * PARTNER DEFINITIONS
  */
-/* line 301, ../sass/parseme/_layout.scss */
+/* line 306, ../sass/parseme/_layout.scss */
 .partner p {
   text-align: justify;
 }
-/* line 305, ../sass/parseme/_layout.scss */
+/* line 310, ../sass/parseme/_layout.scss */
 .partner h1::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
 
-/* line 312, ../sass/parseme/_layout.scss */
+/* line 317, ../sass/parseme/_layout.scss */
 .partner .container {
   padding: 40px 0;
 }
@@ -672,42 +684,42 @@ h6 {
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 320, ../sass/parseme/_layout.scss */
+/* line 325, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 328, ../sass/parseme/_layout.scss */
+/* line 333, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
-/* line 332, ../sass/parseme/_layout.scss */
+/* line 337, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
-/* line 335, ../sass/parseme/_layout.scss */
+/* line 340, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
-  height: 273px;
+  height: 276px;
 }
-/* line 339, ../sass/parseme/_layout.scss */
+/* line 344, ../sass/parseme/_layout.scss */
 .bottom .grid-mobile-11 {
   margin-bottom: 50px;
 }
 
-/* line 343, ../sass/parseme/_layout.scss */
+/* line 348, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 351, ../sass/parseme/_layout.scss */
+/* line 356, ../sass/parseme/_layout.scss */
 .bottom a, .sc a, .top a {
   color: white;
   text-decoration: none;
   line-height: 1.5em;
 }
-/* line 357, ../sass/parseme/_layout.scss */
+/* line 362, ../sass/parseme/_layout.scss */
 .bottom a:hover, .sc a:hover, .top a:hover {
   text-decoration: underline;
 }
@@ -715,44 +727,44 @@ h6 {
 /*
  * FOOTER DEFINITIONS
  */
-/* line 365, ../sass/parseme/_layout.scss */
+/* line 370, ../sass/parseme/_layout.scss */
 .footer {
   background: #333333;
   color: white;
 }
 @media (min-width: 996px) {
-  /* line 365, ../sass/parseme/_layout.scss */
+  /* line 370, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 70px;
   }
 }
 @media (max-width: 995px) {
-  /* line 365, ../sass/parseme/_layout.scss */
+  /* line 370, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 30px;
     padding: 10px 0;
   }
 }
 @media (min-width: 996px) {
-  /* line 365, ../sass/parseme/_layout.scss */
+  /* line 370, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 13px;
   }
 }
 @media (max-width: 995px) {
-  /* line 365, ../sass/parseme/_layout.scss */
+  /* line 370, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 11px;
   }
 }
 
-/* line 377, ../sass/parseme/_layout.scss */
+/* line 382, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
   display: inline;
 }
-/* line 382, ../sass/parseme/_layout.scss */
+/* line 387, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
@@ -961,6 +973,14 @@ strong {
   color: #000;
 }
 
+/**
+ *   FontAwesome Einr├╝ckung
+ */
+/* line 64, ../sass/parseme/_classes.scss */
+.fa::before {
+  margin-right: 5px;
+}
+
 /* line 3, ../sass/parseme/_customisenews.scss */
 .news .bodytext {
   margin: 10px 0;
@@ -999,9 +1019,10 @@ strong {
     min-height: 150px;
     color: white;
     font-size: 24px;
+    padding: 10px;
     vertical-align: bottom;
     margin-right: 10px;
-    width: 150px;
+    width: 130px;
   }
 }
 @media (min-width: 996px) {
@@ -1014,26 +1035,28 @@ strong {
     min-height: 150px;
     color: white;
     font-size: 24px;
+    padding: 10px;
     vertical-align: bottom;
     margin-left: 10px;
-    width: 150px;
+    width: 130px;
   }
 }
-/* line 64, ../sass/parseme/_customisenews.scss */
+/* line 65, ../sass/parseme/_customisenews.scss */
 .news .date_box #date {
   font-weight: bold;
   padding: 5px;
 }
 @media (min-width: 996px) {
-  /* line 64, ../sass/parseme/_customisenews.scss */
+  /* line 65, ../sass/parseme/_customisenews.scss */
   .news .date_box #date {
     position: absolute;
     bottom: 0px;
     right: 0px;
+    padding: 10px;
   }
 }
 @media (max-width: 995px) {
-  /* line 64, ../sass/parseme/_customisenews.scss */
+  /* line 65, ../sass/parseme/_customisenews.scss */
   .news .date_box #date {
     position: relative;
     height: 1px;
@@ -1045,21 +1068,22 @@ strong {
     right: 0px;
   }
 }
-/* line 84, ../sass/parseme/_customisenews.scss */
+/* line 87, ../sass/parseme/_customisenews.scss */
 .news .date_box_odd #date {
   font-weight: bold;
   padding: 5px;
 }
 @media (min-width: 996px) {
-  /* line 84, ../sass/parseme/_customisenews.scss */
+  /* line 87, ../sass/parseme/_customisenews.scss */
   .news .date_box_odd #date {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    padding: 10px;
   }
 }
 @media (max-width: 995px) {
-  /* line 84, ../sass/parseme/_customisenews.scss */
+  /* line 87, ../sass/parseme/_customisenews.scss */
   .news .date_box_odd #date {
     position: relative;
     color: #208ccc;
@@ -1072,18 +1096,18 @@ strong {
   }
 }
 @media (min-width: 996px) {
-  /* line 102, ../sass/parseme/_customisenews.scss */
+  /* line 107, ../sass/parseme/_customisenews.scss */
   .news .news-odd {
     margin-left: 150px;
   }
 }
 @media (max-width: 995px) {
-  /* line 108, ../sass/parseme/_customisenews.scss */
+  /* line 113, ../sass/parseme/_customisenews.scss */
   .news .article {
     padding: 0 10px !important;
   }
 }
-/* line 115, ../sass/parseme/_customisenews.scss */
+/* line 120, ../sass/parseme/_customisenews.scss */
 .news .article .header, .news .article .bodytext {
   z-index: 100;
 }
@@ -1163,7 +1187,7 @@ strong {
 /* line 3, ../sass/parseme/_lists.scss */
 .mainr ul {
   margin: 10px 0;
-  background-color: white;
+  background-color: #eee;
   padding: 10px;
 }
 /* line 10, ../sass/parseme/_lists.scss */
@@ -1655,9 +1679,12 @@ html[xmlns] .flexslider .slides {
 
 /* line 7, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="text"] {
+  position: relative;
+  top: -8px;
   border: 1px solid #208ccc;
   margin: 10px 0;
   padding: 2px;
+  font-size: 16px;
 }
 @media (min-width: 996px) {
   /* line 7, ../sass/parseme/_forms.scss */
@@ -1672,26 +1699,29 @@ html[xmlns] .flexslider .slides {
   }
 }
 
-/* line 15, ../sass/parseme/_forms.scss */
+/* line 18, ../sass/parseme/_forms.scss */
 .csc-form-element textarea {
+  position: relative;
+  top: -8px;
   border: 1px solid #208ccc;
   margin: 10px 0;
   padding: 2px;
+  font-size: 16px;
 }
 @media (min-width: 996px) {
-  /* line 15, ../sass/parseme/_forms.scss */
+  /* line 18, ../sass/parseme/_forms.scss */
   .csc-form-element textarea {
     width: 50%;
   }
 }
 @media (max-width: 995px) {
-  /* line 15, ../sass/parseme/_forms.scss */
+  /* line 18, ../sass/parseme/_forms.scss */
   .csc-form-element textarea {
     width: 70%;
   }
 }
 
-/* line 23, ../sass/parseme/_forms.scss */
+/* line 29, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="submit"] {
   border: 1px solid #208ccc;
   background-color: white;
@@ -1702,7 +1732,22 @@ html[xmlns] .flexslider .slides {
   padding: 5px;
 }
 
-/* line 34, ../sass/parseme/_forms.scss */
+@media screen and (max-width: 814px) {
+  /* line 41, ../sass/parseme/_forms.scss */
+  .csc-form-element label {
+    position: relative;
+    top: 0px;
+    margin-bottom: 5px !important;
+  }
+}
+@media screen and (min-width: 815px) {
+  /* line 49, ../sass/parseme/_forms.scss */
+  .csc-form-element label {
+    position: relative;
+    top: 6px;
+  }
+}
+/* line 55, ../sass/parseme/_forms.scss */
 .csc-form-element em {
   text-transform: none !important;
   font-style: italic;
@@ -1710,12 +1755,12 @@ html[xmlns] .flexslider .slides {
   color: #208ccc;
 }
 
-/* line 41, ../sass/parseme/_forms.scss */
+/* line 62, ../sass/parseme/_forms.scss */
 .csc-mailform {
   margin: 20px 0 0 0;
 }
 
-/* line 47, ../sass/parseme/_forms.scss */
+/* line 68, ../sass/parseme/_forms.scss */
 *[type="submit"]:hover {
   color: #208ccc;
 }

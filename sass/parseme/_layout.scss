@@ -163,13 +163,13 @@ z-index: 50;
 }
 
 .sc .bodytext {
-  padding: 0 10px 10px 10px; 
+  padding: 0 15px 15px 15px; 
 }
 
 .sc {
   @include breakpoint(desktop) {
      display: block;
-  min-height: 375px;
+  min-height: 400px;
   }
    @include breakpoint(phone) {
      display: block;
@@ -200,7 +200,7 @@ z-index: 50;
 /*
  * MAIN DEFINITIONS
  */
-.main {
+.main, .mainfollow {
   p {
    // text-align: justify;
   }
@@ -216,16 +216,21 @@ z-index: 50;
        content: "\f101";
        font-family: "FontAwesome";
        width : 25px;
+       margin-right:10px;
   }
 }
 
-.main .container {
+.main .container, .mainfollow .container {
   @include breakpoint(desktop) { padding: $container_padding; }
    @include breakpoint(phone) { padding: 10px 0px; }
 }
 
 .main {
   background: #eee;
+}
+
+.mainfollow {
+  background: #fff;
 }
 
 .article {
@@ -333,7 +338,7 @@ z-index: 50;
       margin: 0 0 10px 0 ;
     }
     .logo_bottom img {
-      height: 273px;
+      height: 276px;
     }
     
     .grid-mobile-11 {

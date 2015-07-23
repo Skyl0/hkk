@@ -57,3 +57,11 @@ strong {
   color: #000;
 }
 
+/**
+ *   FontAwesome Einrückung
+ */
+
+.fa::before {
+  margin-right: 5px;
+}
+

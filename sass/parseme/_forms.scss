@@ -5,17 +5,23 @@
 }
 
 .csc-form-element input[type="text"]  {
+  position: relative;
+  top: -8px;
   border: 1px solid $color_top_bar;
   margin: 10px 0 ;
    padding: 2px;
+   font-size: 16px;
   @include breakpoint(desktop) { width: 50%; }
   @include breakpoint(phone) { width: 70%; }
 }
 
 .csc-form-element textarea  {
+  position: relative;
+  top: -8px;
   border: 1px solid $color_top_bar;
   margin: 10px 0  ;
    padding: 2px;
+   font-size: 16px;
    @include breakpoint(desktop) { width: 50%; }
    @include breakpoint(phone) { width: 70%; }
 }
@@ -29,6 +35,21 @@
    cursor: pointer;
    transition: all 0.5s;
     padding: 5px;
+ }
+ 
+  @media screen and (max-width: 814px) {
+   .csc-form-element label {
+     position: relative;
+     top: 0px;
+     margin-bottom: 5px !important;
+   }
+ }
+ 
+ @media screen and (min-width: 815px) {
+   .csc-form-element label {
+     position: relative;
+     top: 6px;
+   }
  }
 
 .csc-form-element em {
