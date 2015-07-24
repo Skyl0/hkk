@@ -65,7 +65,7 @@ jQuery(document).ready(function($)  {
     button = '.searchbox-button';
     color = '#208ccc';
     
-     $(form).hover( function() {
+     $(button).hover( function() {
 		sb_on();
 		
      }, function() {
@@ -75,22 +75,26 @@ jQuery(document).ready(function($)  {
      function sb_off() {
      	if (!( $(sword).hasClass('focus') ) ) {
      		$(button).animate().removeClass('fill');
-     		//$(button).animate({"background-color":"#fff"});
-	     	//$(button).animate({'background-color' :'#208ccc'});
-	     	//$(sbox).stop().animate({'opacity' :'0'});
-	     	$(sbox).css("opacity", "0");
-	     	$(form).css("z-index", "100");
-	     	$(button).attr('src','fileadmin/hkk/images/search_blue.png');
+     		$(button).attr('src','fileadmin/hkk/images/search_blue.png');
+    
+	     	$(form).css("z-index", "100"); 
+	     	$(sbox).fadeOut();
+	     	$(sbox).css("z-index", "-9999"); 
+	     		     	   	
+	     	
+	     	
 	    }
      }
      function sb_on() {
      	$(button).animate().addClass('fill');
-     	//$(button).animate({"background-color":"#208ccc"});
-       // $(button).animate({'background-color' : 'white'});
-     	//$(sbox).stop().animate({'opacity' :'1'});
-     	$(sbox).css("opacity", "1");
-     	$(form).css("z-index", "501");
      	$(button).attr('src','fileadmin/hkk/images/search_white.png');
+     
+     	$(form).css("z-index", "501"); 
+     	$(sbox).fadeIn();
+     	$(sbox).css("z-index", "9999"); 
+     	
+     	
+     	
      }
      
      $(sword).focus().addClass('focus');

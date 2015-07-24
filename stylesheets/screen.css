@@ -264,50 +264,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: italic;
 }
 /* line 29, ../sass/parseme/_fonts.scss */
+.mainr a {
+  color: black !important;
+}
+
+/* line 33, ../sass/parseme/_fonts.scss */
 h1 {
   font-size: 26px;
   line-height: 36px;
   clear: both;
 }
 @media (min-width: 996px) {
-  /* line 29, ../sass/parseme/_fonts.scss */
+  /* line 33, ../sass/parseme/_fonts.scss */
   h1 {
     margin: 0 0 15px 0px;
   }
 }
 @media (max-width: 995px) {
-  /* line 29, ../sass/parseme/_fonts.scss */
+  /* line 33, ../sass/parseme/_fonts.scss */
   h1 {
     margin: 0 0 15px 0px;
   }
 }
 
-/* line 38, ../sass/parseme/_fonts.scss */
+/* line 42, ../sass/parseme/_fonts.scss */
 .titlebar h1 {
   display: inline-block;
 }
 
-/* line 42, ../sass/parseme/_fonts.scss */
+/* line 46, ../sass/parseme/_fonts.scss */
 .sc h1 {
   margin-left: 5px !important;
 }
 
-/* line 46, ../sass/parseme/_fonts.scss */
+/* line 50, ../sass/parseme/_fonts.scss */
 h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
   margin: 25px 0 15px 0;
+  color: #208ccc;
 }
 
-/* line 53, ../sass/parseme/_fonts.scss */
+/* line 58, ../sass/parseme/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 15px 0;
 }
 
-/* line 59, ../sass/parseme/_fonts.scss */
+/* line 64, ../sass/parseme/_fonts.scss */
 h6 {
   font-size: 26px;
   margin: 0 0 15px 0;
@@ -635,7 +641,7 @@ h6 {
   .mainl ul li a {
     display: block;
     color: #208ccc;
-    margin: 7px 0 !important;
+    margin: 7px 0 15px 0 !important;
     font-size: 18px;
     text-decoration: none;
   }
@@ -904,6 +910,23 @@ h6 {
   }
 }
 
+/* line 141, ../sass/parseme/_menus.scss */
+.sidehead a {
+  font-size: 26px !important;
+  color: black !important;
+  margin: 0 0 25px 0 !important;
+}
+
+/* line 146, ../sass/parseme/_menus.scss */
+.sidehead a:hover {
+  font-weight: normal !important;
+}
+
+/* line 150, ../sass/parseme/_menus.scss */
+#sidecurrent a {
+  font-weight: bold !important;
+}
+
 @media (min-width: 996px) {
   /* line 1, ../sass/parseme/_classes.scss */
   .taright {
@@ -1155,8 +1178,6 @@ strong {
   position: relative;
   top: -31px;
   float: right;
-  height: 60px;
-  z-index: 100;
   transition: all 0.3s;
 }
 
@@ -1164,26 +1185,29 @@ strong {
 .searchbox-sword {
   border: 0px;
   padding: 2px;
+  background-color: white;
   height: 20px;
 }
 
-/* line 17, ../sass/parseme/_searchbox.scss */
+/* line 18, ../sass/parseme/_searchbox.scss */
 .sword-border {
   position: relative;
   float: left;
-  opacity: 0;
-  display: block;
+  z-index: -9999;
+  display: inline-block;
+  background-color: white;
   top: 0px;
   padding: 10px 0 10px 10px;
   background-color: #208ccc;
 }
 
-/* line 30, ../sass/parseme/_searchbox.scss */
+/* line 32, ../sass/parseme/_searchbox.scss */
 .searchbox-button {
   padding: 15px 10px 15px 10px;
+  z-index: 9999;
 }
 
-/* line 35, ../sass/parseme/_searchbox.scss */
+/* line 38, ../sass/parseme/_searchbox.scss */
 .fill {
   background-color: #208ccc !important;
 }
@@ -1197,25 +1221,22 @@ strong {
 /* line 10, ../sass/parseme/_lists.scss */
 .mainr ul li {
   position: relative;
-  left: 20px;
+  left: 15px;
   line-height: 30px;
+  padding-right: 30px;
+  padding-left: 10px;
 }
-/* line 17, ../sass/parseme/_lists.scss */
+/* line 19, ../sass/parseme/_lists.scss */
 .mainr ul li:before {
-  content: '\f10c';
+  position: absolute;
+  content: '\f111';
   /* FontAwesome char code inside the '' */
   font-family: "FontAwesome";
   /* FontAwesome or whatever */
   display: inline-block;
   color: #208ccc;
-  font-size: 14px;
-  height: 1.6em;
-  position: relative;
-  bottom: 1px;
-  width: 1.6em;
-  /* same as padding-left set on li */
-  margin-left: -1.5em;
-  /* same as padding-left set on li */
+  font-size: 11px;
+  margin: 0 5px 0 -20px;
 }
 
 /*
@@ -1793,7 +1814,7 @@ html[xmlns] .flexslider .slides {
 /* line 79, ../sass/parseme/_forms.scss */
 .newsletter input.nemail {
   border: 0;
-  width: 100px;
+  width: 110px;
   padding: 5px;
   margin: 0 -5px 0 0;
   color: #aaa;
