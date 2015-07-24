@@ -17,11 +17,11 @@
 }
 
 ul.slides {
-  position: relative;
+ // position: relative;
 //  height: 480px;
   
   li {
-     position: relative;
+//     position: relative;
   //  height: 480px;
   }
 }
@@ -134,11 +134,11 @@ p.flex-caption {
 }
 .flexslider .slides > li {
   display: none;
+  height: 440px;
+  
   -webkit-backface-visibility: hidden;
 }
-.flexslider .slides img {
 
-}
 .flexslider .slides:after {
   content: "\0020";
   display: block;
@@ -160,7 +160,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
- margin: -67px 0 0 0; 
+ margin:  0; 
  // height: 480px;
  // top: -20px;
   background: #ffffff;
@@ -206,6 +206,8 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides a {
   position: fixed;
+  width: 100%;
+  top: 125px;
 }
 
 .flex-viewport {
@@ -316,7 +318,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute; 
-  top: 500px; // was -40
+  top: 400px; // was -40
   text-align: center;
   z-index: 150 !important;
 }

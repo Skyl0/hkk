@@ -393,7 +393,7 @@ h6 {
 /* line 59, ../sass/parseme/_layout.scss */
 .fixedslider {
   position: relative;
-  margin-top: 50px !important;
+  margin-top: 79px !important;
 }
 
 @media (min-width: 996px) {
@@ -1165,18 +1165,19 @@ b {
   margin: -2em auto 0 auto;
   position: relative;
   text-align: center;
+  z-index: 501;
   top: 70px;
   background-image: url(../images/scrollup_ia.png);
 }
 
 @media (max-width: 995px) {
-  /* line 10, ../sass/parseme/_scrollup.scss */
+  /* line 11, ../sass/parseme/_scrollup.scss */
   .fixscrollup div {
     top: 40px !important;
   }
 }
 
-/* line 14, ../sass/parseme/_scrollup.scss */
+/* line 15, ../sass/parseme/_scrollup.scss */
 .scrollup a {
   height: 59px;
   width: 59px;
@@ -1186,7 +1187,7 @@ b {
   transition: all 0.4s;
 }
 
-/* line 23, ../sass/parseme/_scrollup.scss */
+/* line 25, ../sass/parseme/_scrollup.scss */
 .scrollup a:hover {
   opacity: 1 !important;
 }
@@ -1271,15 +1272,6 @@ b {
 /*
  * OWN ADDINS by Y7
  */
-/* line 19, ../sass/parseme/_slider.scss */
-ul.slides {
-  position: relative;
-}
-/* line 23, ../sass/parseme/_slider.scss */
-ul.slides li {
-  position: relative;
-}
-
 /* line 29, ../sass/parseme/_slider.scss */
 p.flex-caption {
   position: relative;
@@ -1409,6 +1401,7 @@ p.flex-caption span {
 /* line 135, ../sass/parseme/_slider.scss */
 .flexslider .slides > li {
   display: none;
+  height: 440px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -1442,7 +1435,7 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 /* line 162, ../sass/parseme/_slider.scss */
 .flexslider {
-  margin: -67px 0 0 0;
+  margin: 0;
   background: #ffffff;
   border: 0px solid #ffffff;
   position: relative;
@@ -1491,9 +1484,11 @@ html[xmlns] .flexslider .slides {
 /* line 207, ../sass/parseme/_slider.scss */
 .flexslider .slides a {
   position: fixed;
+  width: 100%;
+  top: 125px;
 }
 
-/* line 211, ../sass/parseme/_slider.scss */
+/* line 213, ../sass/parseme/_slider.scss */
 .flex-viewport {
   max-height: 480px;
   -webkit-transition: all 1s ease;
@@ -1503,28 +1498,28 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 
-/* line 221, ../sass/parseme/_slider.scss */
+/* line 223, ../sass/parseme/_slider.scss */
 .loading .flex-viewport {
   max-height: 200px;
 }
 
-/* line 224, ../sass/parseme/_slider.scss */
+/* line 226, ../sass/parseme/_slider.scss */
 .carousel li {
   margin-right: 5px;
 }
 
-/* line 228, ../sass/parseme/_slider.scss */
+/* line 230, ../sass/parseme/_slider.scss */
 .flex-direction-nav {
   *height: 0;
 }
 @media (max-width: 995px) {
-  /* line 228, ../sass/parseme/_slider.scss */
+  /* line 230, ../sass/parseme/_slider.scss */
   .flex-direction-nav {
     display: none !important;
   }
 }
 
-/* line 234, ../sass/parseme/_slider.scss */
+/* line 236, ../sass/parseme/_slider.scss */
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
@@ -1545,7 +1540,7 @@ html[xmlns] .flexslider .slides {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 254, ../sass/parseme/_slider.scss */
+/* line 256, ../sass/parseme/_slider.scss */
 .flex-direction-nav a:before {
   font-family: "FontAwesome";
   font-size: 40px;
@@ -1555,52 +1550,52 @@ html[xmlns] .flexslider .slides {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 262, ../sass/parseme/_slider.scss */
+/* line 264, ../sass/parseme/_slider.scss */
 .flex-direction-nav a.flex-next:before {
   content: '\f054';
 }
 
-/* line 265, ../sass/parseme/_slider.scss */
+/* line 267, ../sass/parseme/_slider.scss */
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
 
-/* line 268, ../sass/parseme/_slider.scss */
+/* line 270, ../sass/parseme/_slider.scss */
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
 }
 
-/* line 272, ../sass/parseme/_slider.scss */
+/* line 274, ../sass/parseme/_slider.scss */
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
 
-/* line 276, ../sass/parseme/_slider.scss */
+/* line 278, ../sass/parseme/_slider.scss */
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 
-/* line 279, ../sass/parseme/_slider.scss */
+/* line 281, ../sass/parseme/_slider.scss */
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 10px;
 }
 
-/* line 283, ../sass/parseme/_slider.scss */
+/* line 285, ../sass/parseme/_slider.scss */
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
 
-/* line 286, ../sass/parseme/_slider.scss */
+/* line 288, ../sass/parseme/_slider.scss */
 .flex-direction-nav .flex-disabled {
   opacity: 0 !important;
   filter: alpha(opacity=0);
   cursor: default;
 }
 
-/* line 291, ../sass/parseme/_slider.scss */
+/* line 293, ../sass/parseme/_slider.scss */
 .flex-pauseplay a {
   display: block;
   width: 20px;
@@ -1615,7 +1610,7 @@ html[xmlns] .flexslider .slides {
   color: #000;
 }
 
-/* line 304, ../sass/parseme/_slider.scss */
+/* line 306, ../sass/parseme/_slider.scss */
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
   font-size: 20px;
@@ -1623,26 +1618,26 @@ html[xmlns] .flexslider .slides {
   content: '\f004';
 }
 
-/* line 310, ../sass/parseme/_slider.scss */
+/* line 312, ../sass/parseme/_slider.scss */
 .flex-pauseplay a:hover {
   opacity: 1;
 }
 
-/* line 313, ../sass/parseme/_slider.scss */
+/* line 315, ../sass/parseme/_slider.scss */
 .flex-pauseplay a.flex-play:before {
   content: '\f003';
 }
 
-/* line 316, ../sass/parseme/_slider.scss */
+/* line 318, ../sass/parseme/_slider.scss */
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  top: 500px;
+  top: 400px;
   text-align: center;
   z-index: 150 !important;
 }
 
-/* line 323, ../sass/parseme/_slider.scss */
+/* line 325, ../sass/parseme/_slider.scss */
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
@@ -1650,7 +1645,7 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 
-/* line 329, ../sass/parseme/_slider.scss */
+/* line 331, ../sass/parseme/_slider.scss */
 .flex-control-paging li a {
   width: 16px;
   height: 16px;
@@ -1669,34 +1664,34 @@ html[xmlns] .flexslider .slides {
   border-radius: 30px;
 }
 
-/* line 346, ../sass/parseme/_slider.scss */
+/* line 348, ../sass/parseme/_slider.scss */
 .flex-control-paging li a:hover {
   background: #aaa;
   background: white;
 }
 
-/* line 350, ../sass/parseme/_slider.scss */
+/* line 352, ../sass/parseme/_slider.scss */
 .flex-control-paging li a.flex-active {
   background: #fff;
   background: white;
   cursor: default;
 }
 
-/* line 355, ../sass/parseme/_slider.scss */
+/* line 357, ../sass/parseme/_slider.scss */
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
 
-/* line 360, ../sass/parseme/_slider.scss */
+/* line 362, ../sass/parseme/_slider.scss */
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
 
-/* line 365, ../sass/parseme/_slider.scss */
+/* line 367, ../sass/parseme/_slider.scss */
 .flex-control-thumbs img {
   width: 100%;
   height: auto;
@@ -1710,12 +1705,12 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 
-/* line 377, ../sass/parseme/_slider.scss */
+/* line 379, ../sass/parseme/_slider.scss */
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
 
-/* line 380, ../sass/parseme/_slider.scss */
+/* line 382, ../sass/parseme/_slider.scss */
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
@@ -1725,13 +1720,13 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
-  /* line 388, ../sass/parseme/_slider.scss */
+  /* line 390, ../sass/parseme/_slider.scss */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 10px;
   }
 
-  /* line 392, ../sass/parseme/_slider.scss */
+  /* line 394, ../sass/parseme/_slider.scss */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;

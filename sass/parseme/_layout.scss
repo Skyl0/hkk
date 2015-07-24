@@ -24,7 +24,7 @@ z-index: 50;
   height: 40px;
   color: white;
   font-size: $normal;
- // position: fixed;
+ // position: fixed !important; 
 }
 .top span {
   margin: 0 0 0 10px;   
@@ -58,7 +58,7 @@ z-index: 50;
 
 .fixedslider {
   position: relative;
-  margin-top: 50px !important;
+  margin-top: 79px !important;
 }
 
 

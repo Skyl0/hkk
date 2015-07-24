@@ -120,12 +120,15 @@ jQuery(document).ready(function($)  {
      
     $(document).scroll(function () {
     var y = $(document).scrollTop(),
+    	//top = $(".top");
         header = $(".menu");
         slider = $(".slider-outer");
-    if (y >= 40) {
+    if (y >= 30) {
+    	//top.slideUp('fast');
         header.addClass('fixedmenu');
         slider.addClass('fixedslider');
     } else {
+    	//top.slideDown('fast');
         header.removeClass('fixedmenu');
         slider.removeClass('fixedslider');
     }
