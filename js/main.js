@@ -65,24 +65,30 @@ jQuery(document).ready(function($)  {
     button = '.searchbox-button';
     color = '#208ccc';
     
+    focus = false;
+   $(sbox).hide("slide", { direction: "right" }, 1);
+   // sb_off();
+    
      $(button).hover( function() {
-		sb_on();
-		
+		sb_on();		
      }, function() {
 		setTimeout(sb_off,1500);		
 	 } );
      
      function sb_off() {
-     	if (!( $(sword).hasClass('focus') ) ) {
-     		$(button).animate().removeClass('fill');
-     		$(button).attr('src','fileadmin/hkk/images/search_blue.png');
+     	if (!focus) {
+     		     	 
+	     	$(sbox).hide("slide", { direction: "right" }, 500);
+	     	
+	     	setTimeout(function() {
+	     		$(sbox).css("z-index", "-9999"); 
+		     	$(form).css("z-index", "100");
+		     	
+		     	$(button).animate().removeClass('fill');
+	     		$(button).attr('src','fileadmin/hkk/images/search_blue.png');
+	     	}, 500);
+	     	
     
-	     	$(form).css("z-index", "100"); 
-	     	$(sbox).fadeOut();
-	     	$(sbox).css("z-index", "-9999"); 
-	     		     	   	
-	     	
-	     	
 	    }
      }
      function sb_on() {
@@ -90,20 +96,41 @@ jQuery(document).ready(function($)  {
      	$(button).attr('src','fileadmin/hkk/images/search_white.png');
      
      	$(form).css("z-index", "501"); 
-     	$(sbox).fadeIn();
-     	$(sbox).css("z-index", "9999"); 
-     	
-     	
+     	$(sbox).css("z-index", "9999");  
+     	$(sbox).show("slide", { direction: "right" }, 500);
+     	   	
      	
      }
      
-     $(sword).focus().addClass('focus');
+     $(sword).focus( function()
+     { 
+     	//$(this).addClass('focus');
+     	focus = true;
+     });
      
      $(sword).blur( function() {
-     	$(this).removeClass('focus');
-     	setTimeout(sb_off,1500);
-     	
+     	focus = false;
+     	//$(this).removeClass('focus');
+     	setTimeout(sb_off,1500);     	
      });
+     
+     /**
+      * Fixed Menu Top 
+      */
+     
+    $(document).scroll(function () {
+    var y = $(document).scrollTop(),
+        header = $(".menu");
+        slider = $(".slider-outer");
+    if (y >= 40) {
+        header.addClass('fixedmenu');
+        slider.addClass('fixedslider');
+    } else {
+        header.removeClass('fixedmenu');
+        slider.removeClass('fixedslider');
+    }
+});
+     
      
      
           
@@ -139,5 +166,11 @@ jQuery(document).ready(function($)  {
 	  	});
 	});
 	
+	/**
+	 * Slides Parallax 0 
+	 */
+	
+	//$('.flexslider img').attr("data-parallax","{'y' : 0}");
+		
 
 });

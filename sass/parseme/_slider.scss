@@ -13,15 +13,16 @@
  * OWN ADDINS by Y7
  */
 .flexslider strong, .flexslider span {
-  z-index:1 !important;
+  //z-index:1 !important;
 }
 
 ul.slides {
-  
-  height: 480px;
+  position: relative;
+//  height: 480px;
   
   li {
-    height: 480px;
+     position: relative;
+  //  height: 480px;
   }
 }
 
@@ -36,7 +37,7 @@ p.flex-caption {
      top: 120px;
   left: 20px;
    }
-  z-index: 5;
+  z-index: 150;
   color: white;
   text-shadow: 2px 2px 5px #000;
    @include breakpoint(desktop) {
@@ -46,7 +47,8 @@ p.flex-caption {
  }
  
  .flex-control-nav {
-   z-index: 500 !important;
+   position: relative;
+   z-index: 150 !important;
   // top: -20px !important;
  }
  
@@ -67,7 +69,7 @@ p.flex-caption {
     padding-bottom: 5px;
     }
    font-weight: bold;
-   z-index: 11;
+   z-index: 150 !important;
  }
  p.flex-caption span {
    position: relative;
@@ -84,7 +86,7 @@ p.flex-caption {
        line-height: 22px;
       // padding: 4px;
   }
-   z-index: 10;
+   z-index: 150 !important;
   // font-weight: bold;
   
   
@@ -135,9 +137,7 @@ p.flex-caption {
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
-  display: block;
-   @include breakpoint(phone) { min-height: 150px; width: auto;}
+
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -160,9 +160,9 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
- margin: -67px 0 60px; 
-  height: 480px;
-  top: -20px;
+ margin: -67px 0 0 0; 
+ // height: 480px;
+ // top: -20px;
   background: #ffffff;
   border: 0px solid #ffffff;
   position: relative;
@@ -177,13 +177,40 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides {
   zoom: 1;
+ 
 }
+
+.top, .partner, .shortcodes, .main, .bottom, .footer {
+  position: relative;
+  z-index: 200 !important;
+}
+
+.shortcodes, .partner {
+  background: white;
+}
+
+.shortcodes {
+ // margin-top: 435px !important;
+}
+
 .flexslider .slides img {
-  height: auto; 
- // height: 400px;
- // width: auto;
+  height: auto;
+  top: 100px;
+  width: 100%;
+  height: 480px;
+  //position: fixed;
+  display: block;
+ // z-index: 0;
+  @include breakpoint(phone) { min-height: 250px; width: auto;}
+
 }
+.flexslider .slides a {
+  position: fixed;
+}
+
 .flex-viewport {
+ 
+ // z-index: 3;
   max-height: 480px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -212,7 +239,7 @@ html[xmlns] .flexslider .slides {
  // margin: -20px 0 0;
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 150;
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
@@ -288,9 +315,10 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-nav {
   width: 100%;
-  position: absolute;
-  bottom: -60px; // was -40
+  position: absolute; 
+  top: 500px; // was -40
   text-align: center;
+  z-index: 150 !important;
 }
 .flex-control-nav li {
   margin: 0 6px;
