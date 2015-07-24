@@ -65,7 +65,7 @@ z-index: 50;
   background: none;
   width: 100%;
  // height: 304px;
- z-index: 50;
+ //z-index: 50;
  @include breakpoint(phone) {  
    
  // width: 100%;
@@ -73,6 +73,11 @@ z-index: 50;
  // background: url('../images/slider03.jpg') center center no-repeat;
  // background-size: cover; 
  }
+}
+
+.shortcodes {
+  //position: relative;
+// margin:  0 ;
 }
 /*
  * TITLE BAR
@@ -88,6 +93,7 @@ z-index: 50;
  .titlebar * {
    z-index: 100;
  }
+ 
 .titlebar { 
   h1 {
     font-size: 36px !important;

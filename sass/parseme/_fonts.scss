@@ -29,9 +29,14 @@ font-style: italic;
 h1 {
   font-size: 26px;
   line-height: 36px;
+  
   clear: both;
    @include breakpoint(desktop) {margin: 0 0 15px 0px ;}
     @include breakpoint(phone) {margin: 0 0 15px 0px ; }//removed $mobilefix; }
+}
+
+.titlebar h1 {
+  display: inline-block;
 }
 
 .sc h1 {

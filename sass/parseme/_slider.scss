@@ -12,6 +12,19 @@
 /*
  * OWN ADDINS by Y7
  */
+.flexslider strong, .flexslider span {
+  z-index:1 !important;
+}
+
+ul.slides {
+  
+  height: 480px;
+  
+  li {
+    height: 480px;
+  }
+}
+
 p.flex-caption {
   
   position: relative;
@@ -147,8 +160,8 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: -67px 0 60px;
- // height: 304px;
+ margin: -67px 0 60px; 
+  height: 480px;
   top: -20px;
   background: #ffffff;
   border: 0px solid #ffffff;
@@ -171,7 +184,7 @@ html[xmlns] .flexslider .slides {
  // width: auto;
 }
 .flex-viewport {
-  max-height: 304px;
+  max-height: 480px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -196,7 +209,7 @@ html[xmlns] .flexslider .slides {
   display: block;
   width: 40px;
   height: 40px;
-  margin: -20px 0 0;
+ // margin: -20px 0 0;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -276,7 +289,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: 10px; // was -40
+  bottom: -60px; // was -40
   text-align: center;
 }
 .flex-control-nav li {

@@ -22,9 +22,16 @@ jQuery(document).ready(function($)  {
 	$('.news-list-view > div:nth-child(even) div.date_box').removeClass('date_box').addClass('date_box_odd');
 	
 	
-  	// Vertical Tabs
-     //$( ".tx-jfmulticontent-pi1" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-     //$( ".tx-jfmulticontent-pi1 > li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+	// Newsletter Focus on Blur
+	
+	var Input = $('input.nemail');
+    var default_value = Input.val();
+
+    Input.focus(function() {
+        if(Input.val() == default_value) Input.val("");
+    }).blur(function(){
+        if(Input.val().length == 0) Input.val(default_value);
+    });
      
      // Follow Page height Fix
      heightl = $('.mainl').height();
