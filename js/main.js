@@ -126,7 +126,7 @@ jQuery(document).ready(function($)  {
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
-	    if (y >= 30 ) //&& ( $(window).width() >= 979 )) 
+	    if (y >= 30  &&  $(window).width() >= 979 ) 
 	    {	
 	        header.addClass('fixedmenu');
 	        slider.addClass('fixedslider');
@@ -141,7 +141,7 @@ jQuery(document).ready(function($)  {
 
      
     $(document).scroll( function() { checkScrollPosition(); });	
-//	$(document).resize( function() { checkScrollPosition(); });	
+    $(document).resize( function() { checkScrollPosition(); });	
      
      
      

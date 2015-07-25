@@ -1,7 +1,7 @@
 .container {
 //z-index: 50;
 position: relative;
-display: block;
+display: block; 
    @include breakpoint(desktop) {
       width: 960px;
     margin: 0 auto;
@@ -58,7 +58,7 @@ display: block;
 }
 
 .fixedmenu div * {
-  @include breakpoint(phone) { position: relative; }
+  @include breakpoint(phone) { position: relative; display: block; }
 }
 
 .fixedslider {
