@@ -1,6 +1,7 @@
 .container {
-z-index: 50;
-  
+//z-index: 50;
+position: relative;
+display: block;
    @include breakpoint(desktop) {
       width: 960px;
     margin: 0 auto;
@@ -56,11 +57,19 @@ z-index: 50;
 
 }
 
-.fixedslider {
-  position: relative;
-  margin-top: 79px !important;
+.fixedmenu div * {
+  @include breakpoint(phone) { position: relative; }
 }
 
+.fixedslider {
+  position: relative;
+  margin-top: 123.5px !important;
+}
+
+.fixedtitle {
+  position: relative;
+  margin-top: 123.5px !important;
+}
 
 
 .menu img {
@@ -344,6 +353,11 @@ z-index: 50;
  padding: $container_padding;
 }
 
+.csc-textpic-imagecolumn img  {
+  margin: auto 10px;
+  height: 70px;
+  width: auto;
+}
 
 /*
  * BOTTOM DEFINITIONS

@@ -118,21 +118,30 @@ jQuery(document).ready(function($)  {
       * Fixed Menu Top 
       */
      
-    $(document).scroll(function () {
-    var y = $(document).scrollTop(),
-    	//top = $(".top");
         header = $(".menu");
         slider = $(".slider-outer");
-    if (y >= 30) {
-    	//top.slideUp('fast');
-        header.addClass('fixedmenu');
-        slider.addClass('fixedslider');
-    } else {
-    	//top.slideDown('fast');
-        header.removeClass('fixedmenu');
-        slider.removeClass('fixedslider');
+        titlebar = $(".titlebar");
+        //y = 0;
+        
+       
+    function checkScrollPosition() {
+    	var y = $(document).scrollTop();
+	    if (y >= 30 ) //&& ( $(window).width() >= 979 )) 
+	    {	
+	        header.addClass('fixedmenu');
+	        slider.addClass('fixedslider');
+	        titlebar.addClass('fixedtitle');
+	    } else {
+	    	
+	        header.removeClass('fixedmenu');
+	        slider.removeClass('fixedslider');
+	        titlebar.removeClass('fixedtitle');
+	    }
     }
-});
+
+     
+    $(document).scroll( function() { checkScrollPosition(); });	
+//	$(document).resize( function() { checkScrollPosition(); });	
      
      
      

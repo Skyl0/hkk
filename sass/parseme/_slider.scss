@@ -30,12 +30,12 @@ p.flex-caption {
   
   position: relative;
   @include breakpoint(desktop) {
-  top: 150px;
-  left: 0px;
+    top: 60px;
+     left: 0px;
   }
    @include breakpoint(phone) {
-     top: 120px;
-  left: 20px;
+     top: 80px;
+     left: 20px;
    }
   z-index: 150;
   color: white;
@@ -182,7 +182,7 @@ html[xmlns] .flexslider .slides {
 
 .top, .partner, .shortcodes, .main, .bottom, .footer {
   position: relative;
-  z-index: 200 !important;
+  z-index: 5;
 }
 
 .shortcodes, .partner {

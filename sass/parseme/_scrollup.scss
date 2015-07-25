@@ -1,10 +1,12 @@
 .scrollup div {
-  height: 59px; width: 59px; display: block;
+  height: 59px; width: 59px; display: inline-block;
   margin: -2em auto 0 auto;
-  position: relative;
+  position: absolute;
   text-align: center;
-  z-index: 501;
-  top: 70px;
+  z-index: 9998 !important;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -30px;
   background-image: url(../images/scrollup_ia.png);
 }
 
@@ -13,13 +15,13 @@
 }
 
 .scrollup a {
-  height: 59px; width: 59px; display: block;
-//  position: relative;
+  height: 59px; width: 59px; display: inline-block;
+// position: relative;
  // margin: 0 auto;
  background-image: url(../images/scrollup_a.png);
   opacity: 0 !important;
   transition: all 0.4s; //TODO Tobi fragen 
-  
+//  z-index: 9999;
 }
 
 .scrollup a:hover {
