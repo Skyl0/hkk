@@ -5,6 +5,7 @@
   //height: 60px;
    // z-index: 100;
     transition: all 0.3s;
+     @include breakpoint(phone) { display: none; }
 }
 
 .searchbox-sword {

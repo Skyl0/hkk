@@ -64,7 +64,7 @@ p.flex-caption {
     padding-bottom: 10px;
      }
     @include breakpoint(phone) { 
-      font-size: 20px;
+      font-size: 24px;
     line-height: 30px;
     padding-bottom: 5px;
     }
@@ -81,7 +81,7 @@ p.flex-caption {
     }
     
      @include breakpoint(phone) {
-       font-size: 14px;
+       font-size: 16px;
       top: 10px;
        line-height: 22px;
       // padding: 4px;
@@ -195,13 +195,19 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
   height: auto;
-  top: 100px;
+  
   width: 100%;
   height: 480px;
-  //position: fixed;
+  position: relative;
   display: block;
  // z-index: 0;
-  @include breakpoint(phone) { min-height: 250px; width: auto;}
+  @include breakpoint(desktop) {
+    top: 0px;
+  }
+  @include breakpoint(phone) { 
+  //  min-height: 250px; 
+    top: -25px;
+    width: auto;}
 
 }
 .flexslider .slides a {

@@ -6,11 +6,26 @@
 
 jQuery(document).ready(function($)  {
 	
-	// Slider
+	// Menu Respo
+	var thewindow = $(window).width();
+	if (thewindow < 995) {
+		$('.main .container').width(thewindow - 20);
+	}
 	
-	//$('.slider').children().addClass('slide');
+	$(window).resize(function() {
+		thewindow = $(window).width();
+		if (thewindow >= 995) {
+			$('ul.mm').fadeIn('fast');
+		}
+		// Fix News anzeige Respo
+		else {
+			$('.main .container').width(thewindow - 20);
+		}
+	});
 	
-	//$('.flexslider').flexslider();
+	
+	
+
 	
 	// ShortCode Ansicht
 	
@@ -118,21 +133,23 @@ jQuery(document).ready(function($)  {
       * Fixed Menu Top 
       */
      
-        header = $(".menu");
-        slider = $(".slider-outer");
-        titlebar = $(".titlebar");
+        var header = $(".menu");
+        var body = $('body');
+        var slider = $(".slider-outer");
+        var titlebar = $(".titlebar");
         //y = 0;
         
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
-	    if (y >= 30  &&  $(window).width() >= 979 ) 
+	    if (y >= 30) //  &&  $(window).width() >= 979 ) 
 	    {	
+	    	//body.addClass('fixme');
 	        header.addClass('fixedmenu');
 	        slider.addClass('fixedslider');
 	        titlebar.addClass('fixedtitle');
 	    } else {
-	    	
+	    //	body.removeClass('fixme');
 	        header.removeClass('fixedmenu');
 	        slider.removeClass('fixedslider');
 	        titlebar.removeClass('fixedtitle');
@@ -158,7 +175,7 @@ jQuery(document).ready(function($)  {
 	
 	$('.burger').click(function(){
 		$('.mm').toggleClass("expanded");
-		$('.ulmenu').slideToggle("fast");
+		$('.ulmenu ul').slideToggle("fast");
 	});
 		
 	// Scroll Up TODO Tobi wegen Funktion fragen

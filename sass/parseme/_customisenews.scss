@@ -76,7 +76,7 @@
        opacity: 0.5;
        font-size: 100px;
        bottom: 1px;
-       z-index: 0;
+       z-index: -1;
     right: 0px;
      }
     font-weight: bold;
@@ -96,7 +96,7 @@
       opacity: 0.5;
        font-size: 100px;
        bottom: 1px;
-        z-index: 0;
+        z-index: -1;
     left: 0px; }
     font-weight: bold;
     
@@ -112,6 +112,7 @@
     
    .article {
       @include breakpoint(phone) {
+        background: rgba(255,255,255,0.2) !important;
         padding: 0 10px !important;
        // margin-left: $mobilefix;
         }
@@ -120,6 +121,10 @@
    .article .header , .article .bodytext {
      z-index : 100;
    }
-
+ @include breakpoint(phone) {
+    .news .grid-mobile-12 {
+     // margin: 0 20px;
+    }
+  }
     
 }
