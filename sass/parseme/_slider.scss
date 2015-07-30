@@ -197,16 +197,16 @@ html[xmlns] .flexslider .slides {
   height: auto;
   
   width: 100%;
-  height: 480px;
+  height: 605px !important;
   position: relative;
   display: block;
  // z-index: 0;
   @include breakpoint(desktop) {
-    top: 0px;
+    top: -125px;
   }
   @include breakpoint(phone) { 
   //  min-height: 250px; 
-    top: -25px;
+    top: -125px;
     width: auto;}
 
 }

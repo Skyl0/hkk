@@ -138,16 +138,18 @@ jQuery(document).ready(function($)  {
         var slider = $(".slider-outer");
         var titlebar = $(".titlebar");
         //y = 0;
-        
+        var isTouchDevice = 'ontouchstart' in document.documentElement;
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
-	    if (y >= 30) //  &&  $(window).width() >= 979 ) 
+	    if ((y >= 30) && (!isTouchDevice)) //  &&  $(window).width() >= 979 ) 
 	    {	
+	    	
 	    	//body.addClass('fixme');
 	        header.addClass('fixedmenu');
 	        slider.addClass('fixedslider');
 	        titlebar.addClass('fixedtitle');
+	        
 	    } else {
 	    //	body.removeClass('fixme');
 	        header.removeClass('fixedmenu');
