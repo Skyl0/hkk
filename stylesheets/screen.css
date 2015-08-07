@@ -311,9 +311,10 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 15px 0;
+  line-height: 26px;
 }
 
-/* line 64, ../sass/parseme/_fonts.scss */
+/* line 65, ../sass/parseme/_fonts.scss */
 h6 {
   font-size: 26px;
   margin: 0 0 15px 0;
@@ -1318,7 +1319,7 @@ b {
 .mainr ul {
   margin: 10px 0;
   background-color: #eee;
-  padding: 10px;
+  padding: 25px;
 }
 /* line 10, ../sass/parseme/_lists.scss */
 .mainr ul li {
