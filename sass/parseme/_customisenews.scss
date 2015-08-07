@@ -9,7 +9,7 @@
     color: black;
   }
   
-  .more::before {
+  .more::before, .news-backlink-wrap a::before {
        content: "\f101";
        font-family: "FontAwesome";
   }

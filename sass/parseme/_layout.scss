@@ -239,7 +239,7 @@ display: block;
 /*
  * MAIN DEFINITIONS
  */
-.main, .mainfollow {
+.main, .mainfollow, .partner {
   p {
    // text-align: justify;
   }
@@ -358,6 +358,15 @@ display: block;
        content: "\f101";
        font-family: "FontAwesome";
   
+  }
+  
+  img {
+    margin: 0 3px 0 0 !important;
+    padding: 0 !important;
+  }
+  
+  div.csc-textpic-imagecolumn {
+    margin: 0 !important;
   }
 }
 

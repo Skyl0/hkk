@@ -160,3 +160,12 @@
   font-weight: bold !important;
 }
 
+.mm li {
+  opacity: 1 !important;
+  transition: all 0.6s ease;
+}
+
+.mm li.hide-li {
+  opacity: 0 !important;
+  z-index: -999 !important;
+}

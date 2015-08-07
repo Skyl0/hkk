@@ -80,6 +80,10 @@ jQuery(document).ready(function($)  {
     button = '.searchbox-button';
     color = '#208ccc';
     
+    var six = 'ul.mm li:eq(6)';
+    var seven = 'ul.mm li:eq(7)';
+    
+        
     focus = false;
    $(sbox).hide("slide", { direction: "right" }, 1);
    // sb_off();
@@ -98,7 +102,10 @@ jQuery(document).ready(function($)  {
 	     	setTimeout(function() {
 	     		$(sbox).css("z-index", "-9999"); 
 		     	$(form).css("z-index", "100");
-		     	
+		  //  $('ul.mm li:eq(4) a').fadeIn();
+     	//	$('ul.mm li:eq(5) a').fadeIn();
+     			$('ul.mm li:eq(5)').removeClass('hide-li');
+     			$('ul.mm li:eq(6)').removeClass('hide-li');		     	
 		     	$(button).animate().removeClass('fill');
 	     		$(button).attr('src','fileadmin/hkk/images/search_blue.png');
 	     	}, 500);
@@ -108,6 +115,11 @@ jQuery(document).ready(function($)  {
      }
      function sb_on() {
      	$(button).animate().addClass('fill');
+     	//$('ul.mm li:eq(4) a').fadeOut();
+     	//$('ul.mm li:eq(5) a').fadeOut();
+     	$('ul.mm li:eq(5)').addClass('hide-li');
+     	$('ul.mm li:eq(6)').addClass('hide-li');
+
      	$(button).attr('src','fileadmin/hkk/images/search_white.png');
      
      	$(form).css("z-index", "501"); 
@@ -116,7 +128,7 @@ jQuery(document).ready(function($)  {
      	   	
      	
      }
-     
+          
      $(sword).focus( function()
      { 
      	//$(this).addClass('focus');

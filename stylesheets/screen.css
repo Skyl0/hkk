@@ -591,12 +591,12 @@ h6 {
  * MAIN DEFINITIONS
  */
 /* line 247, ../sass/parseme/_layout.scss */
-.main .grid-10, .mainfollow .grid-10 {
+.main .grid-10, .mainfollow .grid-10, .partner .grid-10 {
   border: 1px solid #999;
   margin: 10px 0;
 }
 /* line 254, ../sass/parseme/_layout.scss */
-.main h1::before, .mainfollow h1::before {
+.main h1::before, .mainfollow h1::before, .partner h1::before {
   content: "\f101";
   font-family: "FontAwesome";
   width: 25px;
@@ -714,13 +714,22 @@ h6 {
   content: "\f101";
   font-family: "FontAwesome";
 }
+/* line 363, ../sass/parseme/_layout.scss */
+.partner img {
+  margin: 0 3px 0 0 !important;
+  padding: 0 !important;
+}
+/* line 368, ../sass/parseme/_layout.scss */
+.partner div.csc-textpic-imagecolumn {
+  margin: 0 !important;
+}
 
-/* line 364, ../sass/parseme/_layout.scss */
+/* line 373, ../sass/parseme/_layout.scss */
 .partner .container {
   padding: 40px 0;
 }
 
-/* line 368, ../sass/parseme/_layout.scss */
+/* line 377, ../sass/parseme/_layout.scss */
 .csc-textpic-imagecolumn img {
   margin: auto 10px;
   height: 70px;
@@ -730,48 +739,48 @@ h6 {
 /*
  * BOTTOM DEFINITIONS
  */
-/* line 377, ../sass/parseme/_layout.scss */
+/* line 386, ../sass/parseme/_layout.scss */
 .bottom {
   background: #208ccc;
   color: white;
   font-size: 15px;
 }
 
-/* line 385, ../sass/parseme/_layout.scss */
+/* line 394, ../sass/parseme/_layout.scss */
 .bottom .container {
   padding: 40px 0;
 }
-/* line 389, ../sass/parseme/_layout.scss */
+/* line 398, ../sass/parseme/_layout.scss */
 .bottom p {
   margin: 0 0 10px 0;
 }
-/* line 392, ../sass/parseme/_layout.scss */
+/* line 401, ../sass/parseme/_layout.scss */
 .bottom .logo_bottom img {
   height: 276px;
 }
-/* line 396, ../sass/parseme/_layout.scss */
+/* line 405, ../sass/parseme/_layout.scss */
 .bottom .grid-mobile-11 {
   margin-bottom: 50px;
 }
 
-/* line 400, ../sass/parseme/_layout.scss */
+/* line 409, ../sass/parseme/_layout.scss */
 .contact_bottom .fa {
   width: 25px;
 }
 
-/* line 408, ../sass/parseme/_layout.scss */
+/* line 417, ../sass/parseme/_layout.scss */
 .bottom a, .sc a, .top a {
   color: white;
   text-decoration: none;
   line-height: 1.5em;
 }
-/* line 414, ../sass/parseme/_layout.scss */
+/* line 423, ../sass/parseme/_layout.scss */
 .bottom a:hover, .sc a:hover, .top a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 995px) {
-  /* line 420, ../sass/parseme/_layout.scss */
+  /* line 429, ../sass/parseme/_layout.scss */
   .newsletter_bottom, .sitemap_bottom {
     margin-top: 20px;
   }
@@ -780,44 +789,44 @@ h6 {
 /*
  * FOOTER DEFINITIONS
  */
-/* line 426, ../sass/parseme/_layout.scss */
+/* line 435, ../sass/parseme/_layout.scss */
 .footer {
   background: #333333;
   color: white;
 }
 @media (min-width: 996px) {
-  /* line 426, ../sass/parseme/_layout.scss */
+  /* line 435, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 70px;
   }
 }
 @media (max-width: 995px) {
-  /* line 426, ../sass/parseme/_layout.scss */
+  /* line 435, ../sass/parseme/_layout.scss */
   .footer {
     line-height: 30px;
     padding: 10px 0;
   }
 }
 @media (min-width: 996px) {
-  /* line 426, ../sass/parseme/_layout.scss */
+  /* line 435, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 13px;
   }
 }
 @media (max-width: 995px) {
-  /* line 426, ../sass/parseme/_layout.scss */
+  /* line 435, ../sass/parseme/_layout.scss */
   .footer {
     font-size: 11px;
   }
 }
 
-/* line 438, ../sass/parseme/_layout.scss */
+/* line 447, ../sass/parseme/_layout.scss */
 .footer a {
   color: white;
   text-decoration: none;
   display: inline;
 }
-/* line 443, ../sass/parseme/_layout.scss */
+/* line 452, ../sass/parseme/_layout.scss */
 .footer a:hover {
   text-decoration: underline;
 }
@@ -982,6 +991,18 @@ h6 {
   font-weight: bold !important;
 }
 
+/* line 163, ../sass/parseme/_menus.scss */
+.mm li {
+  opacity: 1 !important;
+  transition: all 0.6s ease;
+}
+
+/* line 168, ../sass/parseme/_menus.scss */
+.mm li.hide-li {
+  opacity: 0 !important;
+  z-index: -999 !important;
+}
+
 @media (min-width: 996px) {
   /* line 1, ../sass/parseme/_classes.scss */
   .taright {
@@ -1089,7 +1110,7 @@ b {
   color: black;
 }
 /* line 12, ../sass/parseme/_customisenews.scss */
-.news .more::before {
+.news .more::before, .news .news-backlink-wrap a::before {
   content: "\f101";
   font-family: "FontAwesome";
 }
