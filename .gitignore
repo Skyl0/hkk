@@ -1,3 +1,10 @@
+
+#**/.sass-cache
+#**/.sass-cache/*
+#Sass Cache Files
+.sass-cache
+.sass-cache/*
+
 #################
 ## Eclipse
 #################
