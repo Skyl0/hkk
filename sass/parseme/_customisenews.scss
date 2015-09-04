@@ -1,5 +1,11 @@
 .news {
   
+  .teaser-text {
+    @include breakpoint(desktop) {padding-left: 20px;}
+    @include breakpoint(phone) {padding-left: 10px;}  
+    padding-right: 20px !important; 
+  }
+  
   .bodytext {
     margin: 10px 0;
   }
@@ -24,6 +30,7 @@
   
   .header h3 {
     margin-top: 10px !important;
+    padding: 10px 10px 0 10px;
     font-weight: bold;
     color: $color_top_bar !important;
   }
@@ -34,12 +41,12 @@
       display: block;
       float: left;
       background: $color_top_bar;
-      min-height: 150px;
+      min-height: 130px;
       color: white;
       font-size: 24px;
-      padding: 10px;
+      padding: 14px;
       vertical-align: bottom;
-      margin-right: 10px;
+      margin-right: 20px;
       width: 130px;
     }
     
@@ -51,13 +58,13 @@
       display: block;
       float: right;
       background: $color_top_bar;
-      min-height: 150px;
+      min-height: 130px;
       color: white;
       font-size: 24px;
-      padding: 10px;
+      padding: 14px;
       
       vertical-align: bottom;
-      margin-left: 10px;
+      margin-left: 20px;
       width: 130px;
     }
       }
@@ -67,14 +74,14 @@
       position: absolute;
     bottom: 0px;
     right: 0px;
-    padding: 10px;
+    padding: 14px;
     }
      @include breakpoint(phone) { 
        position: relative;
        height: 1px;
        color:  $color_top_bar;
-       opacity: 0.5;
-       font-size: 100px;
+       opacity: 1;
+       font-size: 80px;
        bottom: 1px;
        z-index: -1;
     right: 0px;
@@ -85,34 +92,37 @@
     }
     
   .date_box_odd #date {
-    @include breakpoint(desktop) { position: absolute;
+    @include breakpoint(desktop) {
+      position: absolute;
     bottom: 0px;
     left: 0px;
-    padding: 10px;
+    padding: 14px;
     }
-     @include breakpoint(phone) { position: relative;
+     @include breakpoint(phone) {
+       position: relative;
      color:  $color_top_bar;
      height: 1px;
-      opacity: 0.5;
-       font-size: 100px;
+      opacity: 1;
+       font-size: 80px;
        bottom: 1px;
         z-index: -1;
-    left: 0px; }
+    right: 0px; }
     font-weight: bold;
-    
-    
+      
     padding: 5px;
     }
     
     .news-odd {
        @include breakpoint(desktop) {
-    margin-left: 150px;
+    margin-left: 158px;
       }
+      
+  
     }
     
    .article {
       @include breakpoint(phone) {
-        background: rgba(255,255,255,0.2) !important;
+        background: rgba(255,255,255,0.8) !important;
         padding: 0 10px !important;
        // margin-left: $mobilefix;
         }
@@ -123,8 +133,18 @@
    }
  @include breakpoint(phone) {
     .news .grid-mobile-12 {
-     // margin: 0 20px;
+     margin: 20px 0 !important;
     }
   }
     
+}
+
+.news-odd {
+    .header h3 {
+    margin-top: 10px !important;
+   @include breakpoint(desktop) { padding: 10px 20px 0 20px; }
+   @include breakpoint(phone) { padding: 10px 10px 0 10px; }
+    font-weight: bold;
+    color: $color_top_bar !important;
+  }
 }

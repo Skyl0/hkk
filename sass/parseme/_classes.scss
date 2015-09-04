@@ -37,6 +37,10 @@ b {
   font-weight: bold !important;
 }
 
+span.first {
+  margin-right: 15px !important;
+}
+
 /*
  * TEAM Formatting
  */
@@ -45,15 +49,18 @@ b {
     width: 50%;
     clear: left;
     float:left;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    @include breakpoint(desktop) {margin-bottom: 50px;}
+    @include breakpoint(phone) {margin-bottom: 20px;}
   }
+ 
   
   .team-col-right {
     width: 50%;
     float:left;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    @include breakpoint(desktop) {margin-bottom: 50px;}
+    @include breakpoint(phone) {margin-bottom: 20px;}
   }
 
 

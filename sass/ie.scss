@@ -39,7 +39,7 @@ html, body {
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 
 $settings : (
@@ -51,7 +51,7 @@ $settings : (
 
 @include gridle_register_state ( mobile , (
   max-width : 995px,
-  gutter-width : 20px
+  gutter-width : 40px
 ) );
 
 // clear each classes :

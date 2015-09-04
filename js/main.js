@@ -5,6 +5,18 @@
  */
 
 jQuery(document).ready(function($)  {
+	// Newsansicht
+	
+	/*var article = $('.main').find('.article');
+	//var dateboxes = $('.main .date_box');
+	
+	article.each(function(index){
+		var aheight = $(this).height();
+		console.log("Hoehe" + aheight);
+		$(this).children('.date_box').css('minHeight',aheight-20);
+		$(this).children('.date_box_odd').css('minHeight',aheight-20);
+	});
+	*/
 	
 	// ShortCode Ansicht
 	
@@ -40,10 +52,10 @@ jQuery(document).ready(function($)  {
      
  	function resizeShortcodes () {
 			if ($(window).width() > 959 ){
-				getMax();
-		     	$('.scleft .sc-content').height(max); //+ marginb);
-		     	$('.scmiddle .sc-content').height(max);//+ marginb);
-		     	$('.scright .sc-content').height(max);//+ marginb);
+				//getMax();
+		     	$('.scleft .sc-content').height(max ); //+ marginb);
+		     	$('.scmiddle .sc-content').height(max) ;//+ marginb);
+		     	$('.scright .sc-content').height(max );//+ marginb);
 		     
 		     }
 		     else {
@@ -88,7 +100,9 @@ jQuery(document).ready(function($)  {
 	
 	 
 	// News Ansicht
-	$('.news-list-view > div:nth-child(even)').addClass('news-odd').removeClass('no-gutter-left').addClass('no-gutter-right');
+	$('.news-list-view > div:nth-child(odd)').addClass('news-even');
+	$('.news-list-view > div:nth-child(even)').addClass('news-odd'); //.removeClass('no-gutter-left').addClass('no-gutter-right');
+	$('.news-list-view > div').addClass('no-gutter');
 	$('.news-list-view > div:nth-child(even) div.date_box').removeClass('date_box').addClass('date_box_odd');
 	
 	
@@ -126,6 +140,7 @@ jQuery(document).ready(function($)  {
 		     	$('.mainr').css('height','auto');
 		     }
  	}
+ 	
 
     // Search Box
     

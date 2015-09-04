@@ -25,7 +25,7 @@
   		
   	}
   	
-  	a:hover {
+  	a:hover, #navicurrent a {
   	  background: $menu_highlight;
   	  color: white;
   	}

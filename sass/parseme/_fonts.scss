@@ -27,7 +27,7 @@ font-style: italic;
 }
 
 .mainr a {
-  color: black !important;
+  color: $blau !important;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
   
   clear: both;
    @include breakpoint(desktop) {margin: 0 0 15px 0px ;}
-    @include breakpoint(phone) {margin: 0 0 15px 0px ; }//removed $mobilefix; }
+    @include breakpoint(phone) {margin: 0 0 15px 0px ; }//removed $mobilefix; } 
 }
 
 .titlebar h1 {
@@ -44,7 +44,7 @@ h1 {
 }
 
 .sc h1 {
-  margin-left: 5px !important;
+ // margin-left: 5px !important;
 }
 
 h2 {
@@ -59,7 +59,7 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 25px 0 15px 0 ;
-  line-height: 26px;
+  line-height: 32px;
 }
 
 h6  {

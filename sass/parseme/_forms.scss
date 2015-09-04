@@ -63,17 +63,21 @@
   margin: 20px 0 0 0 ;
 }
   
-   
+    .csc-mailform *[type="submit"] {
+      color: $blau;
+    }
  
  .csc-mailform *[type="submit"]:hover {
-
-  color: $color_top_bar;
+  background-color: $color_top_bar !important;
+  color: white;
 }
 
 /*
  * NEWSLETTER ANMELDEN
  */
-
+.newsletter {
+  margin-top: 30px;
+}
 .newsletter {
     float: left;
     input.nemail {

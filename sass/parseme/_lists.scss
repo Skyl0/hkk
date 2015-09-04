@@ -1,19 +1,20 @@
 .mainr {
   
   ul{
-    margin: 10px 0 ;
+    margin: 28px 0 28px 0;
     background-color: #eee;
-    padding : 25px;
+    padding : 20px 20px 10px 20px;
   }
 
   
 ul li {
   position: relative;
-  left: 15px;
+  left: 17px;
   line-height: 30px;
-  padding-right: 30px;
+  padding-right: 20px;
   // list-style-type: circle !important; 
   padding-left: 10px; 
+  padding-bottom: 10px;
 }
 
  ul li:before {
@@ -22,7 +23,7 @@ ul li {
   font-family: "FontAwesome"; /* FontAwesome or whatever */
   display: inline-block;
   color: $color_top_bar;
-  font-size: 11px;
+  font-size: 7px;
   margin:0 5px 0 -20px;
  // margin-left: -1.5em; /* same as padding-left set on li */
 }

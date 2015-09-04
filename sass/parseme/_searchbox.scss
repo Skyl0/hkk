@@ -65,3 +65,36 @@ form#tx_indexedsearch {
     margin-bottom: 5px;
   }
 }
+
+// Ausgabe
+
+.tx-indexedsearch {
+  ul.browsebox {
+    background-color: white !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    
+    li::before {
+      content: "" !important;
+    }
+    
+    li {
+      left: 0px !important;
+    }
+  }
+  
+  .tx-indexedsearch-browselist-currentPage a{
+    text-decoration: none !important;
+  }
+  
+  .tx-indexedsearch-descr {
+    position: relative;
+    left: 5px;
+    line-height: 27px !important;
+  }
+  
+  .tx-indexedsearch-info {
+    padding: 10px;
+    font-size: $small;
+  }
+}
