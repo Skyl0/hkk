@@ -39,3 +39,29 @@
 .fill {
   background-color: $menu_highlight !important;
 }
+
+
+form#tx_indexedsearch {
+  input, select {
+      position: relative;
+  //top: -8px;
+  border: 1px solid $color_top_bar;
+  margin: 2px 0 2px 10px;
+   padding: 2px;
+   font-size: 16px;
+  }
+}
+
+.tx-indexedsearch-browsebox {
+  padding: 0 0 10px 0 ;
+}
+
+.tx-indexedsearch-res {
+  table {
+    margin: 10px 0;
+  }
+  td {
+    line-height: 1.4em;
+    margin-bottom: 5px;
+  }
+}

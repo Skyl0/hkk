@@ -6,6 +6,48 @@
 
 jQuery(document).ready(function($)  {
 	
+	
+		/*
+      * Fix Shortcode Height
+      */
+      
+     var sc1 = $('.scleft .sc').height();
+     var sc2 = $('.scmiddle .sc').height();
+     var sc3 = $('.scright .sc').height();
+     var max = sc1;
+     
+   //  console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
+     resizeShortcodes();
+     
+ 	function resizeShortcodes () {
+
+ 		     //if ($().width() > 959 ){
+			     if (sc2 > max) {			     	
+					max = sc2;	
+					 console.log('Max: ' + max );	     	
+			     }
+			     if (sc3 > max) {
+			     	max = sc3;
+			     	 console.log('Max: ' + max );
+			     }
+		    
+		     	$('.scleft .sc').height(max);
+		     	$('.scmiddle .sc').height(max);
+		     	$('.scright .sc').height(max);
+		     
+		   //  }
+ 	}
+ 	
+ 	$('.sc .bodytext a').unwrap();
+ 	
+ 	
+ 	var link = $('.scleft a').detach();
+ 	link.appendTo('.scleft .sc');
+ 	link = $('.scmiddle a').detach();
+ 	link.appendTo('.scmiddle .sc');
+ 	link = $('.scright a').detach();
+ 	link.appendTo('.scright .sc');
+ 	
 	// Menu Respo
 	var thewindow = $(window).width();
 	if (thewindow < 995) {

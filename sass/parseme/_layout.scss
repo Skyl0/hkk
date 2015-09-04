@@ -172,6 +172,13 @@ display: block;
      background: $color_shortcodes;
     margin: 25px 0 ;
    }
+   
+   a {
+     position: absolute;
+     bottom: 10px;
+    // left: 10px;
+     padding-left: 15px;
+   }
 }
 
 .sc-image {
@@ -188,13 +195,14 @@ display: block;
 .sc-content {
    @include breakpoint(tablet) {
      min-height: 157px;
-    padding: 10px !important;// 0 10px 0px !important; // 305 = image width shortcodes
+    padding: 10px 10px 20px 10px !important;// 0 10px 0px !important; // 305 = image width shortcodes
     }
    @include breakpoint(phone) {
      background: $color_shortcodes;
      
-     padding: 10px;
+    padding: 10px 10px 20px 10px;
      }
+   position: relative;
 }
 
 .sc .csc-header {
@@ -202,13 +210,13 @@ display: block;
 }
 
 .sc .bodytext {
-  padding: 0 15px 15px 15px; 
+  padding: 0 15px 20px 15px; 
 }
 
 .sc {
   @include breakpoint(desktop) {
      display: block;
-  min-height: 400px;
+ //min-height: 400px;
   }
    @include breakpoint(phone) {
      display: block;
@@ -234,7 +242,9 @@ display: block;
 }
 
 .scright {
-  
+  @include breakpoint(desktop) {
+  position: relative;
+  }
 }
 /*
  * MAIN DEFINITIONS
