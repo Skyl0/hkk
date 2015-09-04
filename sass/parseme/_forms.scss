@@ -53,23 +53,29 @@
  }
 
 .csc-form-element em {
+  position: relative;
+  top: 3px;
   text-transform: none!important;
   font-style: italic;
   font-size: 0.8em;
   color: $color_top_bar;
 }
 
+.csc-form-element {}
+
 .csc-mailform {
   margin: 20px 0 0 0 ;
 }
   
     .csc-mailform *[type="submit"] {
-      color: $blau;
+      background-color: $color_top_bar !important;
+      color: white;
     }
  
  .csc-mailform *[type="submit"]:hover {
-  background-color: $color_top_bar !important;
-  color: white;
+  
+  background-color: white !important;
+  color: $blau;
 }
 
 /*

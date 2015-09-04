@@ -1284,7 +1284,7 @@ span.first {
 /* line 13, ../sass/parseme/_customisenews.scss */
 .news a {
   text-decoration: none;
-  color: black;
+  color: #208ccc;
 }
 /* line 18, ../sass/parseme/_customisenews.scss */
 .news .more::before, .news .news-backlink-wrap a::before {
@@ -1313,7 +1313,7 @@ span.first {
     display: block;
     float: left;
     background: #208ccc;
-    min-height: 130px;
+    min-height: 140px;
     color: white;
     font-size: 24px;
     padding: 14px;
@@ -1329,7 +1329,7 @@ span.first {
     display: block;
     float: right;
     background: #208ccc;
-    min-height: 130px;
+    min-height: 140px;
     color: white;
     font-size: 24px;
     padding: 14px;
@@ -1575,7 +1575,7 @@ form#tx_indexedsearch input, form#tx_indexedsearch select {
 .mainr ul {
   margin: 28px 0 28px 0;
   background-color: #eee;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 8px 20px;
 }
 /* line 10, ../sass/parseme/_lists.scss */
 .mainr ul li {
@@ -2157,41 +2157,44 @@ html[xmlns] .flexslider .slides {
 }
 /* line 55, ../sass/parseme/_forms.scss */
 .csc-form-element em {
+  position: relative;
+  top: 3px;
   text-transform: none !important;
   font-style: italic;
   font-size: 0.8em;
   color: #208ccc;
 }
 
-/* line 62, ../sass/parseme/_forms.scss */
+/* line 66, ../sass/parseme/_forms.scss */
 .csc-mailform {
   margin: 20px 0 0 0;
 }
 
-/* line 66, ../sass/parseme/_forms.scss */
-.csc-mailform *[type="submit"] {
-  color: #208ccc;
-}
-
 /* line 70, ../sass/parseme/_forms.scss */
-.csc-mailform *[type="submit"]:hover {
+.csc-mailform *[type="submit"] {
   background-color: #208ccc !important;
   color: white;
+}
+
+/* line 75, ../sass/parseme/_forms.scss */
+.csc-mailform *[type="submit"]:hover {
+  background-color: white !important;
+  color: #208ccc;
 }
 
 /*
  * NEWSLETTER ANMELDEN
  */
-/* line 78, ../sass/parseme/_forms.scss */
+/* line 84, ../sass/parseme/_forms.scss */
 .newsletter {
   margin-top: 30px;
 }
 
-/* line 81, ../sass/parseme/_forms.scss */
+/* line 87, ../sass/parseme/_forms.scss */
 .newsletter {
   float: left;
 }
-/* line 83, ../sass/parseme/_forms.scss */
+/* line 89, ../sass/parseme/_forms.scss */
 .newsletter input.nemail {
   border: 0;
   width: 110px;
@@ -2199,7 +2202,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 -5px 0 0;
   color: #aaa;
 }
-/* line 91, ../sass/parseme/_forms.scss */
+/* line 97, ../sass/parseme/_forms.scss */
 .newsletter input.nsubmit {
   border: 0;
   background-color: #333333;

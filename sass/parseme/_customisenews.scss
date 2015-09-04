@@ -12,7 +12,7 @@
   
   a {
     text-decoration: none;
-    color: black;
+    color: $blau;
   }
   
   .more::before, .news-backlink-wrap a::before {
@@ -41,7 +41,7 @@
       display: block;
       float: left;
       background: $color_top_bar;
-      min-height: 130px;
+      min-height: 140px;
       color: white;
       font-size: 24px;
       padding: 14px;
@@ -58,7 +58,7 @@
       display: block;
       float: right;
       background: $color_top_bar;
-      min-height: 130px;
+      min-height: 140px;
       color: white;
       font-size: 24px;
       padding: 14px;
