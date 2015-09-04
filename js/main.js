@@ -6,22 +6,28 @@
 
 jQuery(document).ready(function($)  {
 	
+	// ShortCode Ansicht
 	
+	$('.sc > div:nth-child(1)').addClass('sc-image');
+	$('.sc > div:nth-child(2)').addClass('sc-content');
 		/*
       * Fix Shortcode Height
       */
       
-     var sc1 = $('.scleft .sc').height();
-     var sc2 = $('.scmiddle .sc').height();
-     var sc3 = $('.scright .sc').height();
-     var max = sc1;
-     
+        
    //  console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
-     resizeShortcodes();
-     
- 	function resizeShortcodes () {
+   var max = 0;
+	  getMax();
+      resizeShortcodes();
+      
+    function getMax() {
+      	var sc1 = $('.scleft .sc-content').height();
+     	var sc2 = $('.scmiddle .sc-content').height();
+     	var sc3 = $('.scright .sc-content').height();
+     	max = sc1;
+ 		//var marginb = 20;
 
- 		     //if ($().width() > 959 ){
+ 		     
 			     if (sc2 > max) {			     	
 					max = sc2;	
 					 console.log('Max: ' + max );	     	
@@ -30,24 +36,33 @@ jQuery(document).ready(function($)  {
 			     	max = sc3;
 			     	 console.log('Max: ' + max );
 			     }
-		    
-		     	$('.scleft .sc').height(max);
-		     	$('.scmiddle .sc').height(max);
-		     	$('.scright .sc').height(max);
+	}	
+     
+ 	function resizeShortcodes () {
+			if ($(window).width() > 959 ){
+				getMax();
+		     	$('.scleft .sc-content').height(max); //+ marginb);
+		     	$('.scmiddle .sc-content').height(max);//+ marginb);
+		     	$('.scright .sc-content').height(max);//+ marginb);
 		     
-		   //  }
+		     }
+		     else {
+		     	$('.scleft .sc-content').css({height: "auto"});
+		     	$('.scmiddle .sc-content').css({height: "auto"});
+		     	$('.scright .sc-content').css({height: "auto"});
+ 			}
  	}
  	
  	$('.sc .bodytext a').unwrap();
  	
- 	
+ 	/*
  	var link = $('.scleft a').detach();
  	link.appendTo('.scleft .sc');
  	link = $('.scmiddle a').detach();
  	link.appendTo('.scmiddle .sc');
  	link = $('.scright a').detach();
  	link.appendTo('.scright .sc');
- 	
+ 	*/
 	// Menu Respo
 	var thewindow = $(window).width();
 	if (thewindow < 995) {
@@ -55,6 +70,7 @@ jQuery(document).ready(function($)  {
 	}
 	
 	$(window).resize(function() {
+		resizeShortcodes();
 		thewindow = $(window).width();
 		if (thewindow >= 995) {
 			$('ul.mm').fadeIn('fast');
@@ -69,10 +85,7 @@ jQuery(document).ready(function($)  {
 	
 
 	
-	// ShortCode Ansicht
 	
-	$('.sc > div:nth-child(1)').addClass('sc-image');
-	$('.sc > div:nth-child(2)').addClass('sc-content');
 	 
 	// News Ansicht
 	$('.news-list-view > div:nth-child(even)').addClass('news-odd').removeClass('no-gutter-left').addClass('no-gutter-right');

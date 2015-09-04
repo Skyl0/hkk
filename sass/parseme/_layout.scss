@@ -175,7 +175,8 @@ display: block;
    
    a {
      position: absolute;
-     bottom: 10px;
+     @include breakpoint(desktop) {bottom: 10px;}
+     @include breakpoint(phone) {bottom: 18px;}
     // left: 10px;
      padding-left: 15px;
    }
@@ -183,7 +184,7 @@ display: block;
 
 .sc-image {
    @include breakpoint(tablet) {
-        float:left !important;
+        //float:left !important;
    }
    @include breakpoint(phone) {
      float: none;
@@ -229,8 +230,9 @@ display: block;
      position: relative;
   left: -9px;
    }
-  
-
+   @include breakpoint(phone) {
+    margin-top: $stdmargin; 
+    }
 }
 
 .scmiddle {

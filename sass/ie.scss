@@ -1,5 +1,68 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "gridle/gridle";
+
+@import "parseme/_mediaqueries";
+
+@import "parseme/variables";
+@import "parseme/fonts";
+
+@import "parseme/layout";
+
+@import "parseme/menus";
+@import "parseme/classes";
+
+
+@import "parseme/customisenews";
+@import "parseme/scrollup";
+@import "parseme/searchbox";
+@import "parseme/lists";
+@import "parseme/slider";
+@import "parseme/forms";
+@import "parseme/cemanipulate";
+
+
+
+
+
+html, body {
+  font-family: "OpenSans", Arial, sans-serif;
+   @include breakpoint(phone) {
+        overflow:hidden;
+        overflow-y: auto;
+   }
+ // height: 100%;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+$settings : (
+  context : 12,
+  gutter-width : 20px,
+  direction : ltr );
+  
+@include gridle_setup($settings);
+
+@include gridle_register_state ( mobile , (
+  max-width : 995px,
+  gutter-width : 20px
+) );
+
+// clear each classes :
+@include gridle_register_clear_each(2, left);
+@include gridle_register_clear_each(12, both);
+
+@include gridle_register_column( '5on24' , 5, 24 );
+@include gridle_register_column( '7on24' , 7, 24 );
+
+// register states :
+//@include gridle_register_default_states();
+
+
+@include gridle_generate_classes();
