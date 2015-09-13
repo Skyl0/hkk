@@ -16,6 +16,12 @@
   height: 20px;
  
 }
+@-moz-document url-prefix() {
+    .mac .sword-border {
+        padding-bottom: 9px !important;
+    }
+}
+
 .sword-border {
   position: relative;
   float: left;

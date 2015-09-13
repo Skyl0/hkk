@@ -25,7 +25,15 @@ jQuery(document).ready(function($)  {
 		/*
       * Fix Shortcode Height
       */
+      var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; 
       
+      if (isMac) {
+		  $(".top").addClass("mac");
+		 // console.log("im a mac!");
+		} else {
+		//	console.log("not a mac!");
+		  $(".top").addClass("pc");
+		}
         
    //  console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
    var max = 0;

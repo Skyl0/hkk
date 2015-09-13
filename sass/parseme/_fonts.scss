@@ -30,6 +30,27 @@ font-style: italic;
   color: $blau !important;
 }
 
+p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+.shortcodes p {
+   font-size: 0.9em;
+}
+
+.shortcodes a {
+  font-size: 1em;
+}
+
+.top {
+  font-size: 0.8em; 
+}
+
+.top i {
+  font-size: 1.1em !important;
+}
+
 h1 {
   font-size: 26px;
   line-height: 36px;
