@@ -97,11 +97,21 @@
     input.nsubmit {
       border: 0;
       background-color: $color_footer;
+      border: 1px solid $color_footer;
       color: white;
-      font-weight: bold;
+      //font-weight: bold;
       width: 100px;
       margin: 0;
-      padding: 5px;
+  //    padding: 5px;
+      transition: all 0.3s;
+      height: 27px; 
+    }
+    
+    input.nsubmit:hover {
+      background-color: $blau;
+      color: white;
+      border: 1px solid white;
+  
     }
   
 }  

@@ -18,6 +18,45 @@ jQuery(document).ready(function($)  {
 	});
 	*/
 	
+	//---START---//
+	/* 	MAKE DIV CLICKABLE BASED ON CLASS 'divlink' 
+		- get Link and wrap div with it
+		- get Link Text and set it as title 
+	
+	var lefth = $('.scleft .sc').find('a').attr('href');
+	var leftt = $('.scleft .sc').find('a').attr('target');
+	var lefttext = $('.scleft .sc').find('h3').find('a').text();
+	
+
+			$('.scleft .sc').wrap("<a href='"+curlink+"' class='link-wrap' title='"+lefttext+"' target='"+curlinktarget+"'></a>"); */
+			
+		$('.sc').each(function() {
+		var curlink = $(this).find('a').attr('href');
+		var curlinktarget = $(this).find('a').attr('target');
+		var curlinktitle = $(this).find('a').text();
+		$(this).attr('data-url',curlink);
+		if(curlinktarget == null) {
+			$(this).wrap("<a href='"+curlink+"' class='sclink' title='"+curlinktitle+"'></a>");
+		} else {
+			$(this).wrap("<a href='"+curlink+"' class='sclink' title='"+curlinktitle+"' target='"+curlinktarget+"'></a>");
+		};
+	});
+	
+			$('.article').each(function() {
+		var curlink = $(this).find('a').attr('href');
+		var curlinktarget = $(this).find('a').attr('target');
+		var curlinktitle = $(this).find('a').text();
+		$(this).attr('data-url',curlink);
+		if(curlinktarget == null) {
+			$(this).wrap("<a href='"+curlink+"' class='articlelink' title='"+curlinktitle+"'></a>");
+		} else {
+			$(this).wrap("<a href='"+curlink+"' class='articlelink' title='"+curlinktitle+"' target='"+curlinktarget+"'></a>");
+		};
+	});
+	
+
+//---END---//
+	
 	// ShortCode Ansicht
 	
 	$('.sc > div:nth-child(1)').addClass('sc-image');
