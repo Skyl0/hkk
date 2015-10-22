@@ -138,7 +138,7 @@ display: block;
  */
 .titlebar {
   height: 200px;
-  background: url('../images/slider03.jpg') center center no-repeat;
+  background: url('../images/HKK_Banner_01.jpg') center center no-repeat;
   background-size: cover;
   color: white;
   
@@ -267,7 +267,7 @@ a.articlelink {
 .sc {
   @include breakpoint(desktop) {
      display: block;
- //min-height: 400px;
+min-height: 408px;
   }
    @include breakpoint(phone) {
      display: block;

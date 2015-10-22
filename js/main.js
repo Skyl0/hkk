@@ -77,7 +77,7 @@ jQuery(document).ready(function($)  {
    //  console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
    var max = 0;
 	  getMax();
-      resizeShortcodes();
+     resizeShortcodes();
       
     function getMax() {
       	var sc1 = $('.scleft .sc-content').height();
@@ -105,11 +105,11 @@ jQuery(document).ready(function($)  {
 		     	$('.scright .sc-content').height(max );//+ marginb);
 		     
 		     }
-		     else {
+		/*     else {
 		     	$('.scleft .sc-content').css({height: "auto"});
 		     	$('.scmiddle .sc-content').css({height: "auto"});
 		     	$('.scright .sc-content').css({height: "auto"});
- 			}
+ 		} */
  	}
  	
  	$('.sc .bodytext a').unwrap();
@@ -206,7 +206,7 @@ jQuery(document).ready(function($)  {
    // sb_off();
     
      $(button).hover( function() {
-		sb_on();		
+		setTimeout(sb_on,200);			
      }, function() {
 		setTimeout(sb_off,1500);		
 	 } );

@@ -425,7 +425,7 @@ h6 {
 /* line 139, ../sass/parseme/_layout.scss */
 .titlebar {
   height: 200px;
-  background: url("../images/slider03.jpg") center center no-repeat;
+  background: url("../images/HKK_Banner_01.jpg") center center no-repeat;
   background-size: cover;
   color: white; }
 
@@ -561,7 +561,8 @@ a.articlelink {
 @media (min-width: 996px) {
   /* line 267, ../sass/parseme/_layout.scss */
   .sc {
-    display: block; } }
+    display: block;
+    min-height: 408px; } }
 @media (max-width: 995px) {
   /* line 267, ../sass/parseme/_layout.scss */
   .sc {
