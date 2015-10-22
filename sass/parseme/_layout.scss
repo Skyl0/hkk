@@ -208,11 +208,17 @@ display: block;
    
    a {
      position: absolute;
-     @include breakpoint(desktop) {bottom: 16px;padding-left: 20px;}
+     @include breakpoint(desktop) {bottom: 5px;padding-left: 20px;}
      @include breakpoint(phone) {bottom: 18px;padding-left: 10px;}
     // left: 10px;
      
    }
+}
+
+.sc-content {
+  p.bodytext {
+    min-height: 135px;
+  }
 }
 
 a.sclink {
@@ -345,7 +351,7 @@ min-height: 408px;
 }
 
 .main {
-  background: #eee;
+  background: #e9e9e9;
 }
 
 .mainfollow {

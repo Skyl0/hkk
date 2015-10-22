@@ -107,6 +107,13 @@
       height: 27px; 
     }
     
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* Safari and Chrome */
+      input.nsubmit {
+       height: 25px;
+     }
+}
+    
     input.nsubmit:hover {
       background-color: $blau;
       color: white;

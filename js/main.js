@@ -76,13 +76,13 @@ jQuery(document).ready(function($)  {
         
    //  console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
    var max = 0;
-	  getMax();
-     resizeShortcodes();
+	//  getMax();
+    // resizeShortcodes();
       
     function getMax() {
-      	var sc1 = $('.scleft .sc-content').height();
-     	var sc2 = $('.scmiddle .sc-content').height();
-     	var sc3 = $('.scright .sc-content').height();
+      	var sc1 = $('.scleft .sc-content p').height();
+     	var sc2 = $('.scmiddle .sc-content p').height();
+     	var sc3 = $('.scright .sc-content p').height();
      	max = sc1;
  		//var marginb = 20;
 
@@ -100,9 +100,9 @@ jQuery(document).ready(function($)  {
  	function resizeShortcodes () {
 			if ($(window).width() > 959 ){
 				//getMax();
-		     	$('.scleft .sc-content').height(max ); //+ marginb);
-		     	$('.scmiddle .sc-content').height(max) ;//+ marginb);
-		     	$('.scright .sc-content').height(max );//+ marginb);
+		     	$('.scleft .sc-content p').height(max ); //+ marginb);
+		     	$('.scmiddle .sc-content p').height(max) ;//+ marginb);
+		     	$('.scright .sc-content p').height(max );//+ marginb); 
 		     
 		     }
 		/*     else {
