@@ -4,6 +4,10 @@
  
 }
 
+body.mac input.nsubmit {
+ height: 24px; 
+}
+
 .csc-form-element input[type="text"]  {
   position: relative;
   top: -8px;
@@ -86,6 +90,8 @@
 }
 .newsletter {
     float: left;
+    line-height: 17px;
+    
     input.nemail {
       border:0 ;
       width: 110px;
@@ -122,3 +128,13 @@
     }
   
 }  
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* Safari and Chrome */
+      body.mac input.nsubmit {
+       height: 23px !important;
+       position: relative;
+       top: -1px;
+     }
+}
+

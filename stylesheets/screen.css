@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,38 +24,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby21-x64_2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -1257,10 +1257,7 @@ span.first {
   background-color: white;
   height: 32px; }
 
-@-moz-document url-prefix() {
-  /* line 21, ../sass/parseme/_searchbox.scss */
-  .mac .sword-border {
-    padding-bottom: 9px !important; } }
+@-moz-document url-prefix() {}
 /* line 26, ../sass/parseme/_searchbox.scss */
 .sword-border {
   position: relative;
@@ -1765,6 +1762,10 @@ html[xmlns] .flexslider .slides {
   margin: 0 0 20px 0; }
 
 /* line 7, ../sass/parseme/_forms.scss */
+body.mac input.nsubmit {
+  height: 24px; }
+
+/* line 11, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="text"] {
   position: relative;
   top: -8px;
@@ -1773,15 +1774,15 @@ html[xmlns] .flexslider .slides {
   padding: 2px;
   font-size: 16px; }
   @media (min-width: 996px) {
-    /* line 7, ../sass/parseme/_forms.scss */
+    /* line 11, ../sass/parseme/_forms.scss */
     .csc-form-element input[type="text"] {
       width: 50%; } }
   @media (max-width: 995px) {
-    /* line 7, ../sass/parseme/_forms.scss */
+    /* line 11, ../sass/parseme/_forms.scss */
     .csc-form-element input[type="text"] {
       width: 70%; } }
 
-/* line 18, ../sass/parseme/_forms.scss */
+/* line 22, ../sass/parseme/_forms.scss */
 .csc-form-element textarea {
   position: relative;
   top: -8px;
@@ -1790,15 +1791,15 @@ html[xmlns] .flexslider .slides {
   padding: 2px;
   font-size: 16px; }
   @media (min-width: 996px) {
-    /* line 18, ../sass/parseme/_forms.scss */
+    /* line 22, ../sass/parseme/_forms.scss */
     .csc-form-element textarea {
       width: 50%; } }
   @media (max-width: 995px) {
-    /* line 18, ../sass/parseme/_forms.scss */
+    /* line 22, ../sass/parseme/_forms.scss */
     .csc-form-element textarea {
       width: 70%; } }
 
-/* line 29, ../sass/parseme/_forms.scss */
+/* line 33, ../sass/parseme/_forms.scss */
 .csc-form-element input[type="submit"] {
   border: 1px solid #208ccc;
   background-color: white;
@@ -1809,17 +1810,17 @@ html[xmlns] .flexslider .slides {
   padding: 5px; }
 
 @media screen and (max-width: 814px) {
-  /* line 41, ../sass/parseme/_forms.scss */
+  /* line 45, ../sass/parseme/_forms.scss */
   .csc-form-element label {
     position: relative;
     top: 0px;
     margin-bottom: 5px !important; } }
 @media screen and (min-width: 815px) {
-  /* line 49, ../sass/parseme/_forms.scss */
+  /* line 53, ../sass/parseme/_forms.scss */
   .csc-form-element label {
     position: relative;
     top: 6px; } }
-/* line 55, ../sass/parseme/_forms.scss */
+/* line 59, ../sass/parseme/_forms.scss */
 .csc-form-element em {
   position: relative;
   top: 3px;
@@ -1828,16 +1829,16 @@ html[xmlns] .flexslider .slides {
   font-size: 0.8em;
   color: #208ccc; }
 
-/* line 66, ../sass/parseme/_forms.scss */
+/* line 70, ../sass/parseme/_forms.scss */
 .csc-mailform {
   margin: 20px 0 0 0; }
 
-/* line 70, ../sass/parseme/_forms.scss */
+/* line 74, ../sass/parseme/_forms.scss */
 .csc-mailform *[type="submit"] {
   background-color: #208ccc !important;
   color: white; }
 
-/* line 75, ../sass/parseme/_forms.scss */
+/* line 79, ../sass/parseme/_forms.scss */
 .csc-mailform *[type="submit"]:hover {
   background-color: white !important;
   color: #208ccc; }
@@ -1845,21 +1846,22 @@ html[xmlns] .flexslider .slides {
 /*
  * NEWSLETTER ANMELDEN
  */
-/* line 84, ../sass/parseme/_forms.scss */
+/* line 88, ../sass/parseme/_forms.scss */
 .newsletter {
   margin-top: 30px; }
 
-/* line 87, ../sass/parseme/_forms.scss */
+/* line 91, ../sass/parseme/_forms.scss */
 .newsletter {
-  float: left; }
-  /* line 89, ../sass/parseme/_forms.scss */
+  float: left;
+  line-height: 17px; }
+  /* line 95, ../sass/parseme/_forms.scss */
   .newsletter input.nemail {
     border: 0;
     width: 110px;
     padding: 5px;
     margin: 0 -5px 0 0;
     color: #aaa; }
-  /* line 97, ../sass/parseme/_forms.scss */
+  /* line 103, ../sass/parseme/_forms.scss */
   .newsletter input.nsubmit {
     border: 0;
     background-color: #333333;
@@ -1870,18 +1872,25 @@ html[xmlns] .flexslider .slides {
     transition: all 0.3s;
     height: 27px; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    /* line 87, ../sass/parseme/_forms.scss */
+    /* line 91, ../sass/parseme/_forms.scss */
     .newsletter {
       /* Safari and Chrome */ }
-      /* line 112, ../sass/parseme/_forms.scss */
+      /* line 118, ../sass/parseme/_forms.scss */
       .newsletter input.nsubmit {
         height: 25px; } }
-  /* line 117, ../sass/parseme/_forms.scss */
+  /* line 123, ../sass/parseme/_forms.scss */
   .newsletter input.nsubmit:hover {
     background-color: #208ccc;
     color: white;
     border: 1px solid white; }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Chrome */
+  /* line 134, ../sass/parseme/_forms.scss */
+  body.mac input.nsubmit {
+    height: 23px !important;
+    position: relative;
+    top: -1px; } }
 /* line 1, ../sass/parseme/_cemanipulate.scss */
 #c1 img {
   margin: 0 0 20px 0; }

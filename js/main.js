@@ -5,30 +5,6 @@
  */
 
 jQuery(document).ready(function($)  {
-	// Newsansicht
-	
-	/*var article = $('.main').find('.article');
-	//var dateboxes = $('.main .date_box');
-	
-	article.each(function(index){
-		var aheight = $(this).height();
-		console.log("Hoehe" + aheight);
-		$(this).children('.date_box').css('minHeight',aheight-20);
-		$(this).children('.date_box_odd').css('minHeight',aheight-20);
-	});
-	*/
-	
-	//---START---//
-	/* 	MAKE DIV CLICKABLE BASED ON CLASS 'divlink' 
-		- get Link and wrap div with it
-		- get Link Text and set it as title 
-	
-	var lefth = $('.scleft .sc').find('a').attr('href');
-	var leftt = $('.scleft .sc').find('a').attr('target');
-	var lefttext = $('.scleft .sc').find('h3').find('a').text();
-	
-
-			$('.scleft .sc').wrap("<a href='"+curlink+"' class='link-wrap' title='"+lefttext+"' target='"+curlinktarget+"'></a>"); */
 			
 		$('.sc').each(function() {
 		var curlink = $(this).find('a').attr('href');
@@ -68,6 +44,7 @@ jQuery(document).ready(function($)  {
       
       if (isMac) {
 		  $(".top").addClass("mac");
+		   $("body").addClass("mac");
 		 // console.log("im a mac!");
 		} else {
 		//	console.log("not a mac!");
@@ -114,14 +91,7 @@ jQuery(document).ready(function($)  {
  	
  	$('.sc .bodytext a').unwrap();
  	
- 	/*
- 	var link = $('.scleft a').detach();
- 	link.appendTo('.scleft .sc');
- 	link = $('.scmiddle a').detach();
- 	link.appendTo('.scmiddle .sc');
- 	link = $('.scright a').detach();
- 	link.appendTo('.scright .sc');
- 	*/
+ 
 	// Menu Respo
 	var thewindow = $(window).width();
 	if (thewindow < 995) {
@@ -140,12 +110,6 @@ jQuery(document).ready(function($)  {
 		}
 	});
 	
-	
-	
-
-	
-	
-	 
 	// News Ansicht
 	$('.news-list-view > div:nth-child(odd)').addClass('news-even');
 	$('.news-list-view > div:nth-child(even)').addClass('news-odd'); //.removeClass('no-gutter-left').addClass('no-gutter-right');
@@ -325,12 +289,6 @@ jQuery(document).ready(function($)  {
 	    	}
 	  	});
 	});
-	
-	/**
-	 * Slides Parallax 0 
-	 */
-	
-	//$('.flexslider img').attr("data-parallax","{'y' : 0}");
-		
 
+	
 });
