@@ -9,7 +9,7 @@ jQuery(document).ready(function($)  {
 		$('.sc').each(function() {
 		var curlink = $(this).find('a').attr('href');
 		var curlinktarget = $(this).find('a').attr('target');
-		var curlinktitle = $(this).find('a').text();
+		var curlinktitle = $(this).find('h1').text().trim();
 		$(this).attr('data-url',curlink);
 		if(curlinktarget == null) {
 			$(this).wrap("<a href='"+curlink+"' class='sclink' title='"+curlinktitle+"'></a>");
@@ -21,7 +21,8 @@ jQuery(document).ready(function($)  {
 			$('.article').each(function() {
 		var curlink = $(this).find('a').attr('href');
 		var curlinktarget = $(this).find('a').attr('target');
-		var curlinktitle = $(this).find('a').text();
+		//var curlinktitle = $(this).find('a').text();
+		var curlinktitle = $(this).find('h3').text().trim() ;//+ " - " + $(this).find('p.bodytext').text().trim();
 		$(this).attr('data-url',curlink);
 		if(curlinktarget == null) {
 			$(this).wrap("<a href='"+curlink+"' class='articlelink' title='"+curlinktitle+"'></a>");
